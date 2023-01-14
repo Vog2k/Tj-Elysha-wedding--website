@@ -21,3 +21,5 @@ document.getElementById("navbar").style.top = "-95px";
 }
 prevScrollpos = currentScrollPos;
 }
+
+

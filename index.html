@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Elysha & Timothy Leatau</title>
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
 </head>
@@ -12,57 +12,156 @@
     <div class="navigation">
         <nav class="nav1" id="navbar">
           <ul>
-            <a href="#" style="text-decoration: none; color: #ffe; font-size: 30px; font-family: Orbitron; padding-right: 80px">Mr & Mrs Leatau</a>
+            <a href="index.html" style="text-decoration: none; color: rgb(0, 0, 0); font-size: 30px; font-family: Didot; padding-right: 80px">Mr & Mrs Leatau</a>
 
-            <li><a class="nav-item" href="#">Home</a></li>
-            <li><a class="nav-item" href="#">Gift & Reg</a></li>
-            <li><a class="nav-item" href="#">RSVP</a></li> 
+            <li><a class="nav-item" href="index.html" style=" text-shadow: 0 0 1px rgb(0, 0, 0);" >Home</a></li>
+            <li><a class="nav-item" href="giftsAndReg.html">Gift & Reg</a></li>
+            <li><a class="nav-item" href="RSVP.html">RSVP</a></li> 
 
             <li><a class="nav-item" href="#">Schdule</a></li>
-            <li><a class="nav-item" href="#">Rideshare</a></li>
+            <li><a class="nav-item" href="#">Getting there</a></li>
             <div class="ul2-holder">
-              <li class="ul2"><a href="#">Our Story</a></li>
+              <li class="ul2"><a href="OurStory.html">Our Story</a></li>
               
             </div>
           </ul>
         </nav>
       </div>
+      <script>
+        var body = document.getElementsByTagName('nav')[0];
+        body.style.backgroundColor = 'White';
+
+        // trigger this function every time the user scrolls
+        window.onscroll = function (event) {
+            var scroll = window.pageYOffset;
+            if (scroll < 100) {
+                // green
+                body.style.backgroundColor = 'White';
+            } else if (scroll >= 100 && scroll < 200) {
+                // yellow
+                body.style.backgroundColor = 'White';
+            } 
+
+          }
+      </script>
+
+      <img src="img/Rotovegas.jpeg" alt="" class="image">
+
+      <div class="text">We said yes! Join us in the countdown until we say I do.
       
       <div class="firstcontent">
         <div class="firsttext">
           
-          <h1>Mr & Mrs<br>Leatau</h1><br>
-          <button class="butt"> REPLAY</button>
+          <div class="container">
+            <h1 id="headline"></h1>
+            <div id="countdown">
+              <ul>
+                <li><span id="days"></span>days</li>
+                <li><span id="hours"></span>Hours</li>
+                <li><span id="minutes"></span>Minutes</li>
+                <li><span id="seconds"></span>Seconds</li>
+              </ul>
+            </div>
+            <div id="content" class="emoji">
+              <span>🥳</span>
+              <span>🎉</span>
+              <span>🎂</span>
+            </div>
+          </div>
         </div>
+      </div>
+        <script>// Timer
+
+          (function () {
+              const second = 1000,
+                    minute = second * 60,
+                    hour = minute * 60,
+                    day = hour * 24;
+          
+              let today = new Date(),
+                  dd = String(today.getDate()).padStart(2, "0"),
+                  mm = String(today.getMonth() + 1).padStart(2, "0"),
+                  yyyy = today.getFullYear(),
+                  nextYear = yyyy + 1,
+                  dayMonth = "11/25/",
+                  birthday = dayMonth + yyyy;
+              
+              today = mm + "/" + dd + "/" + yyyy;
+              if (today > birthday) {
+                birthday = dayMonth + nextYear;
+              }
+              //end
+              
+              const countDown = new Date(birthday).getTime(),
+                  x = setInterval(function() {    
+            
+                    const now = new Date().getTime(),
+                          distance = countDown - now;
+            
+                    document.getElementById("days").innerText = Math.floor(distance / (day)),
+                      document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                      document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                      document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+            
+                    //do something later when date is reached
+                    if (distance < 0) {
+                      document.getElementById("headline").innerText = "We said 'I Do'!";
+                      document.getElementById("countdown").style.display = "none";
+                      document.getElementById("content").style.display = "block";
+                      clearInterval(x);
+                    }
+                    //seconds
+                  }, 0)
+              }());</script>
       
       </div>
       <div class="secondcontent">
         <div class="secondtext">
       
-          <h1>RETURNING HUMAN<br>SPACEFLIGHT TO THE<br>UNITED STATES</h1><br>
-          <button class="butt">LEARN MORE</button>
+        <p>25.11.23</p>
+          <button class="butt1">RSVP</button>
+          <!--Thank you for RSVP-ing "Yes" to our big day! We're thrilled to celebrate with you.-->
+          
         </div>
       </div>
       
+    <hr>
+      <h2 class="welcome">Thanks for taking the time to stop by our wedding website. Browse around to read our proposal story, see our favorite engagement photos, learn more wedding details and check back closer to our wedding date for important updates. (P.S.: While you're here, don't forget to RSVP.) We're so thrilled to ring in our wedding day with you.</h2>
+<hr>
+
       <div class="thirdcontent">
         <div class="thirdtext">
       
-          <h1>CREW DRAGON<br>DOCKING<br>SIMULATOR</h1>
-          <p>Crew Dragon is designed to autonomously dock and undock with the International Space Station. However, the crew can take manual control of the spacecraft if necessary.</p><br>
-          <button class="butt">TRY IT</button>
-          <h1 class="extrapadding">gchgcgcgc,gchg<br>kchgchgckc<br>kgcmgcgcgc<br>gcnngfcx<br>mgcgcgk</h1>
+          <h1>The Venue</h1>
+          <h2>Abbeville Estate</h2>
+          <p>To our friends and family: We're so excited to celebrate our wedding with you. Find all the details you need to know about our big day here.</p><br>
+          <button class="butt">LEARN MORE</button>
+          <h1 class="extrapadding">gchgcgcgc,gchg<br>kchgchgckc</h1>
       
         </div>
-        <div class="dragondockvid"><iframe src="https://www.spacex.com/media/iss_docking_sim.mp4?autoplay=1" allow='autoplay' allowfullscreen="false" frameborder="0" width="800px" height="800px"></iframe>
+        <div class="Venue-vid">
+          <iframe width="800" height="400" src="https://www.youtube.com/embed/HBRL435IzEc?autoplay=1&mute=1" title="Glasshouse Morningside, Auckland Wedding Venue" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <style>
+          @media only screen and (max-width: 911px){
+            .dragondockvid {
+              width: 50;
+              height: 50;
+              
+            
+            }
+          }
+          </style>
         </div>
-      </div>
       
       <div class="fourthcontent">
         <div class="fourthtext">
-      
-          <h3>05/01/20</h3>
-          <h1>NASA SELECTS LUNAR<br>OPTIMIZED STARSHIP</h1>
-          <p>NASA selected SpaceX to develop a lunar optimized Starship to transport<br> crew between lunar orbit and the surface of the Moon as part of NASA’s<br> Artemis program.</p><br>
+
+          <h1>PLEASE RSVP BEFORE<br> OCTOBER 7TH 2023</h1>
+          <p>By RSVPing before October 7th 2023, you will be helping us to ensure that the event runs smoothly <br>
+            and that everyone has an enjoyable experience. To RSVP, please click the button below.<br><br>
+            we are expecting a large turnout. In order for us to properly plan and prepare for the event, <br> it is crucial that we have an accurate headcount.<br> 
+            <br> We look forward to seeing you at the event and thank you <br> in advance for your prompt response.</p><br>
+
           <button class="butt">LEARN MORE</button>
         </div>
       
@@ -70,7 +169,7 @@
       
       <footer>
         <ul class="foot">
-          <li class="author">SPACEY <i class="fa fa-copyright" aria-hidden="true"></i> 2020 by <a href="https://soumyadeepta-das.glitch.me/" target="_blank">Soumyadeepta Das</a></li>
+          <li class="author">Wedding website designed in <i class="fa fa-copyright" aria-hidden="true"></i> 2023 by <a href="" target="_blank">Timothy.L</a></li>
           <li><a href="">TWITTER</a></li>
           <li><a href="">YOUTUBE</a></li>
           <li><a href="">INSTAGRAM</a></li>
