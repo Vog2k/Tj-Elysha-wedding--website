@@ -6,11 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elysha & Timothy Leatau</title>
     <link rel="stylesheet" href="OurStory.css">
-    <script src="OurStory.js"></script>
-    <script src="card.js"></script>
-    <script src="script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
 </head>
 <body>
     <div class="navigation">
@@ -47,6 +42,29 @@
             } 
 
           }
+          (document).ready(function(){       
+    var scroll_pos = 0;
+    $(document).scroll(function() { 
+        scroll_pos = $(this).scrollTop();
+        if(scroll_pos > 650) {
+            $(".nav1").css('background-color', '#000');
+        } else {
+            $(".nav1").css('background-color', 'Transparent');
+        }
+    });
+  });
+  
+  
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+  document.getElementById("navbar").style.top = "0";
+  } else {
+  document.getElementById("navbar").style.top = "-95px";
+  }
+  prevScrollpos = currentScrollPos;
+  }
           
           
       </script>
@@ -55,20 +73,15 @@
         <div class="firsttext">
           
           
-          <h1>Mr & Mrs<br>Leatau</h1><br>
+          
         </div>
       
       </div>
 
 </div>
-<div class="secondcontent">
-  <div class="secondtext">
-
-    </div>
-  </div>
     <div class="boxForTinder">
       <div class="boxForTinder1">
-      
+        <ion-icon id="dislike" name="heart-dislike"></ion-icon>
         <div id="swiper">
           <div class="card" style="--i:0">
             <img src="https://source.unsplash.com/random/1000x1000/?sky" alt="">
@@ -86,10 +99,61 @@
             <img src="https://source.unsplash.com/random/1000x1000/?forest" alt="">
           </div>
         </div>
-        <ion-icon id="dislike" name="heart-dislike">Dislike</ion-icon>
         <ion-icon id="like" name="heart"></ion-icon>
-            </div>
-          <div>
+        
+        <script src="card.js"></script>
+        <script src="script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      
+        <script>
+          var returnedSuggestion = ''
+          let editor, doc, cursor, line, pos
+          document.addEventListener("keydown", (event) => {
+          setTimeout(()=>{
+            editor = event.target.closest('.CodeMirror');
+            if (editor){
+              doc = editor.CodeMirror.getDoc()
+              cursor = doc.getCursor()
+              line = doc.getLine(cursor.line)
+              pos = {line: cursor.line, ch: line.length}
+              if (event.key == "Enter"){
+                var query = doc.getRange({ line: Math.max(0,cursor.line-10), ch: 0 }, { line: cursor.line, ch: 0 })
+                window.postMessage({source: 'getSuggestion', payload: { data: query } } )
+                //displayGrey(query)
+              }
+              else if (event.key == "ArrowRight"){
+                acceptTab(returnedSuggestion)
+              }
+            }
+          }, 0)
+          })
+      
+          function acceptTab(text){
+          if (suggestionDisplayed){
+            doc.replaceRange(text, pos)
+            suggestionDisplayed = false
+          }
+          }
+          function displayGrey(text){
+          var element = document.createElement('span')
+          element.innerText = text
+          element.style = 'color:grey'
+          var lineIndex = pos.line;
+          editor.getElementsByClassName('CodeMirror-line')[lineIndex].appendChild(element)
+          suggestionDisplayed = true
+          }
+          window.addEventListener('message', (event)=>{
+          if (event.source !== window ) return
+          if (event.data.source == 'return'){
+            returnedSuggestion = event.data.payload.data
+            displayGrey(event.data.payload.data)
+          }
+          })
+        </script>
+  </div>
+</div>
+
 
 
   <div class="thirdcontent">
@@ -98,37 +162,45 @@
 
   
     </div>
-
-    </div>
+  </div>
       
 <!---->     
 
       <div class="fourthcontent">
         <div class="fourthtext">
 
-          <h1>" Timothy Leatau "</h1>
-          <p>I was feeling pretty low one day, and decided to try my luck on Tinder. I wasn't really expecting much, but I figured it couldn't hurt to put myself out there.
+          <h1>Timothy Leatau</h1>
+
+          <p>" I was feeling pretty low one day, and decided to try my luck on Tinder. I wasn't really expecting much, but I figured it couldn't hurt to put myself out there.
             As I swiped through profiles, I came across a beautiful girl with a great smile. Her name was Elysha  Larking, and I couldn't help but feel drawn to her. I decided to take the plunge and message her.
             To my surprise, she messaged first and beat me to it, right away we started chatting. We quickly discovered that we had a lot in common and we both shared
             the same sense of humor. We made plans to meet up in person mid covid crisis , yes i know naughty haha but to our suprise 1 and half months down the track we finaly got to meet in person. <br> <br>
             When I saw her in person, I knew right away that she was special. We had an instant connection and the conversation just flowed naturally. We talked for a total of 6 hours about everything and anything, and I knew I had to see her again.
             We started dating and it's been a wild ride ever since. We've been together for over 2 years now and every day just keeps getting better. I never would have thought that I could find love on a dating app, but Elysha proved me wrong.
-            I'm so glad I swiped right that day on tinder, it was the best decision I've made.
+            I'm so glad I swiped right that day on tinder, it was the best decision I've made."
              <br></p>
         </div>
-      
       </div>
-      <div class="fourthcontent">
+      
+  <div class="thirdcontent">
+    <div class="thirdtext">
+  
+
+  
+    </div>
+  </div>
+      <div class="fifthcontent">
         <div class="fourthtext">
 
-          <h1>" Timothy Leatau "</h1>
-          <p>I was feeling pretty low one day, and decided to try my luck on Tinder. I wasn't really expecting much, but I figured it couldn't hurt to put myself out there.
+          <h1> Elysha Larking</h1>
+
+          <p>" I was feeling pretty low one day, and decided to try my luck on Tinder. I wasn't really expecting much, but I figured it couldn't hurt to put myself out there.
             As I swiped through profiles, I came across a beautiful girl with a great smile. Her name was Elysha  Larking, and I couldn't help but feel drawn to her. I decided to take the plunge and message her.
             To my surprise, she messaged first and beat me to it, right away we started chatting. We quickly discovered that we had a lot in common and we both shared
             the same sense of humor. We made plans to meet up in person mid covid crisis , yes i know naughty haha but to our suprise 1 and half months down the track we finaly got to meet in person. <br> <br>
             When I saw her in person, I knew right away that she was special. We had an instant connection and the conversation just flowed naturally. We talked for a total of 6 hours about everything and anything, and I knew I had to see her again.
             We started dating and it's been a wild ride ever since. We've been together for over 2 years now and every day just keeps getting better. I never would have thought that I could find love on a dating app, but Elysha proved me wrong.
-            I'm so glad I swiped right that day on tinder, it was the best decision I've made.
+            I'm so glad I swiped right that day on tinder, it was the best decision I've made."
              <br></p>
         </div>
       

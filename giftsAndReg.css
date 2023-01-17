@@ -156,13 +156,13 @@ html {
     }
 }
 .firstcontent {
-  background: url(/img/reg.jpg)
+  background: url(img/reg.jpg)
     rgba(0, 0, 0, 0.3) no-repeat center center;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 20%;
+    height: 800px;
 }
 
 .firsttext {

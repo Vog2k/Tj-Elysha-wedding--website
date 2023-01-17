@@ -261,11 +261,20 @@ html {
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
   }
-  
+  section {
+    padding: 1em;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
   .secondcontent {
     background: url(img/Bannerz.PNG) no-repeat center center;
     padding-top: 460px;
-    margin: 0px;
+    margin-top: 50px;
+    left: 50px;
+    top: 50px;
   }
   
   .secondtext {
