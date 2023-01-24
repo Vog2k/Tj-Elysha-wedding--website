@@ -10,45 +10,75 @@
     <!--Needs favicon-->
 </head>
 <body>
-    <div class="navigation">
-        <nav class="nav1" id="navbar">
-          <ul>
-            <a href="index.html" style="text-decoration: none; color: rgb(0, 0, 0); font-size: 30px; font-family: Didot; padding-right: 80px">Mr & Mrs Leatau</a>
 
-            <li><a class="nav-item" href="index.html" style=" text-shadow: 0 0 1px rgb(0, 0, 0);" >Home</a></li>
-            <li><a class="nav-item" href="giftsAndReg.html">Gift & Reg</a></li>
-            <li><a class="nav-item" href="RSVP.html">RSVP</a></li> 
 
-            <li><a class="nav-item" href="#">Schdule</a></li>
-            <li><a class="nav-item" href="#">Getting there</a></li>
-            <div class="ul2-holder">
-              <li class="ul2"><a href="OurStory.html">Our Story</a></li>
-              
-            </div>
-          </ul>
-        </nav>
-      </div>
-      <script>
-        var body = document.getElementsByTagName('nav')[0];
-        body.style.backgroundColor = 'White';
+<div class="page-wrap">
+  <header class="page-header">
 
-        // trigger this function every time the user scrolls
-        window.onscroll = function (event) {
-            var scroll = window.pageYOffset;
-            if (scroll < 100) {
-                // green
-                body.style.backgroundColor = 'White';
-            } else if (scroll >= 100 && scroll < 200) {
-                // yellow
-                body.style.backgroundColor = 'White';
-            } 
+    <nav>
+      <h1>Mr & Mrs | Leatau</h1>
+      <ul>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li id="burger" class="">
+          <span></span>
+          <span></span>
+          <span></span>
+        </li>
+      </ul>
+    </nav>
 
-          }
-      </script>
+    <main>
+      <article id="hero-1" style="--i: 5">
+        <div class="hero-info">
+          <h2 style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);">It's Official</h2>
+          <h1 style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);">We are Engaged</h1>
+          <h3 style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);">Monteith Crescent, 36°52'51.6"S 174°49'19.2"E</h3>
+        </div>
+        <div class="hero-image hi-1" style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);"></div>
+      </article>
 
-      <img src="img/Rotovegas.jpeg" alt="" class="image">
+      <article id="hero-2" style="--i: 4">
+        <div class="hero-info">
+          <h2 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Savour the</h2>
+          <h1 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Journey</h1>
+          <h3 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Papamoa, 37°41'22.1"S 176°16'00.4"E</h3>
+        </div>
+        <div class="hero-image hi-2" style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);"></div>
 
-      <div class="text">We said yes! Join us in the countdown until we say I do.
+      </article>
+
+      <article id="hero-3" style="--i: 3">
+        <div class="hero-info">
+          <h2 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Expand Your</h2>
+          <h1 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Horizons</h1>
+          <h3 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Lake Tekapo, 44°00'12.7"S 170°29'02.3"E</h3>
+        </div>
+        <div class="hero-image hi-3" style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);"></div>
+
+      </article>
+
+      <article id="hero-4" style="--i: 2">
+        <div class="hero-info">
+          <h2 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Explore and</h2>
+          <h1 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Reflect</h1>
+          <h3 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Rotorua, 38°09'25.6"S 176°16'27.5"E</h3>
+        </div>
+        <div class="hero-image hi-4" style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);"></div>
+
+      </article>
+
+      <article id="hero-5" style="--i: 1">
+        <div class="hero-info">
+          <h2 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Change Your</h2>
+          <h1 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Perspective</h1>
+          <h3 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Hastings, 39°38'12.9"S 176°49'47.4"E</h3>
+        </div>
+        <div class="hero-image hi-5"></div>
+      </article>
+      
+    </main>
+    <div class="text">We said yes! Join us in the countdown until we say I do.
       
       <div class="firstcontent">
         <div class="firsttext">
@@ -114,8 +144,212 @@
                     //seconds
                   }, 0)
               }());</script>
-      
+
       </div>
+  </header>
+
+  <section style="display: none; clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);">
+    <ul class="level-1">
+      <li>
+        <h3>Destinations</h3>
+        <ul class="level-2">
+          <li>
+            <p>Asia</p>
+            <ul class="level-3">
+              <li>Bali</li>
+              <li>Cambodia</li>
+              <li>Georgia</li>
+              <li>India</li>
+              <li>Indonesia</li>
+              <li>Laos</li>
+              <li>Malaysia</li>
+              <li>Maldives</li>
+              <li>Myanmar</li>
+              <li>Philippines</li>
+              <li>Singapore</li>
+              <li>Sri Lanka</li>
+              <li>Thailand</li>
+              <li>Uzbekistan</li>
+              <li>Vietnam</li>
+            </ul>
+          </li>
+          <li>
+            <p>Europe</p>
+            <ul class="level-3">
+              <li>Czech Republic</li>
+              <li>France</li>
+              <li>Georgia</li>
+              <li>Greece</li>
+              <li>Hungary</li>
+              <li>Iceland</li>
+              <li>Italy</li>
+              <li>Malta</li>
+              <li>Netherlands</li>
+              <li>Poland</li>
+              <li>Portugal</li>
+              <li>Spain</li>
+              <li>Turkey</li>
+            </ul>
+          </li>
+          <li>
+            <p>Africa</p>
+            <ul class="level-3">
+              <li>Egypt</li>
+              <li>Maurtius</li>
+              <li>Morocco</li>
+            </ul>
+          </li>
+          <li>
+            <p>Middle East</p>
+            <ul class="level-3">
+              <li>Egypt</li>
+              <li>Jordan</li>
+              <li>Oman</li>
+              <li>Turkey</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h3>Travel Tips</h3>
+        <ul>
+          <li>Going on a trip</li>
+          <li>Travel Insurance</li>
+          <li>Working abroad</li>
+          <li>Saving</li>
+          <li>Instagram tips</li>
+        </ul>
+        <p><small>More tips...</small></p>
+      </li>
+      <li>
+        <h3>Resources</h3>
+        <ul>
+          <li>Personalised travel advice</li>
+          <li>Where we book our travels</li>
+          <li>Become a booking agent</li>
+        </ul>
+        <p><small>More resources...</small></p>
+      </li>
+      <li>
+        <h3>About Us</h3>
+        <ul>
+          <li>Our story</li>
+          <li>Work with us</li>
+          <li>Instagram</li>
+          <li>YouTube</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+</div>
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+<script id="rendered-js">
+  let burger = document.getElementById("burger");
+  let overlay = document.querySelector("section");
+  let heroImage = document.querySelector(".hero-image");
+  let showMenu = false;
+  let del = 3;
+  let i = 1;
+  
+  let tl = gsap.timeline({
+    repeat: -1,
+    yoyo: true,
+    ease: "expo.out" });
+  
+  
+  overlay.style.display = "none";
+  
+  burger.addEventListener("click", e => {
+    showMenu = !showMenu;
+    if (showMenu) {
+      burger.classList.add("active");
+      overlay.style.display = "block";
+      gsap.to(overlay, 1, {
+        clipPath: "polygon(0% 0%, 100% 0, 100% 100%, 0% 100%)",
+        ease: "expo.in" });
+  
+    } else {
+      burger.classList.remove("active");
+      gsap.to(overlay, 1, {
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+        ease: "expo.out",
+        onComplete: () => overlay.style.display = "none" });
+  
+    }
+  });
+  
+  gsap.set(["#hero-1 h2, #hero-1 h1, #hero-1 h3"], {
+    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)" });
+  
+  
+  gsap.set(
+  [
+  `#hero-2 h2, #hero-3 h2, #hero-4 h2, #hero-5 h2,
+       #hero-2 h1, #hero-3 h1, #hero-4 h1, #hero-5 h1,
+       #hero-2 h3, #hero-3 h3, #hero-4 h3, #hero-5 h3`],
+  
+  {
+    clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)" });
+  
+  
+  
+  while (i < 5) {if (window.CP.shouldStopExecution(0)) break;
+    tl.to(`#hero-${i} h2`, 0.9, {
+      clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)",
+      delay: del }).
+  
+    to(
+    `#hero-${i} h1`,
+    0.9,
+    {
+      clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)" },
+  
+    "-=0.3").
+  
+    to(
+    `#hero-${i} h3`,
+    0.9,
+    {
+      clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)" },
+  
+    "-=0.3").
+  
+    to(
+    `#hero-${i} .hi-${i}`,
+    0.7,
+    {
+      clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)" },
+  
+    "-=1").
+  
+    to(`#hero-${i + 1} h2`, 0.9, {
+      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)" }).
+  
+    to(
+    `#hero-${i + 1} h1`,
+    0.9,
+    {
+      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)" },
+  
+    "-=0.3").
+  
+    to(
+    `#hero-${i + 1} h3`,
+    0.9,
+    {
+      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)" },
+  
+    "-=0.3");
+  
+  
+    i++;
+  }window.CP.exitedLoop(0);
+  //# sourceURL=pen.js
+      </script>
+
+
       
       <div class="secondcontent">
         <div class="secondtext">
@@ -130,19 +364,20 @@
     <hr>
       <h2 class="welcome">Thanks for taking the time to stop by our wedding website. Browse around to read our proposal story, see our favorite engagement photos, learn more wedding details and check back closer to our wedding date for important updates. (P.S.: While you're here, don't forget to RSVP.) We're so thrilled to ring in our wedding day with you.</h2>
 <hr>
-
+<br>
       <div class="thirdcontent">
         <div class="thirdtext">
       
           <h1>The Venue</h1>
-          <h2>Abbeville Estate</h2>
+          <h2>HU's Boutique Venue & Accommodation</h2>
           <p>To our friends and family: We're so excited to celebrate our wedding with you. Find all the details you need to know about our big day here.</p><br>
-          <button class="butt">LEARN MORE</button>
+          <a href="gettingThere">
+          <button class="butt">LEARN MORE</button></a>
           <h1 class="extrapadding">gchgcgcgc,gchg<br>kchgchgckc</h1>
       
         </div>
         <div class="Venue-vid">
-          <iframe width="800" height="400" src="https://www.youtube.com/embed/HBRL435IzEc?autoplay=1&mute=1" title="Glasshouse Morningside, Auckland Wedding Venue" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="900" height="400" src="https://www.youtube.com/embed/tQpX9h8dqhE?autoplay=1&mute=1" title="Glasshouse Morningside, Auckland Wedding Venue" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <style>
           @media only screen and (max-width: 911px){
             .dragondockvid {
@@ -163,8 +398,25 @@
             and that everyone has an enjoyable experience. To RSVP, please click the button below.<br><br>
             we are expecting a large turnout. In order for us to properly plan and prepare for the event, <br> it is crucial that we have an accurate headcount.<br> 
             <br> We look forward to seeing you at the event and thank you <br> in advance for your prompt response.</p><br>
+          <a href="RSVP.html">
+          <button class="butt">LEARN MORE</button></a>
+        </div>
+      
+      </div>
+      <div class="fifthcontent ">
+        <div class="fifthtext">
 
-          <button class="butt">LEARN MORE</button>
+          <h1><br> Un plugged</h1>
+          <p>Welcome family and friends! We’ve hired a 
+            photographer to capture how <br> this moment looks 
+            with their camera, so you can capture how it 
+            feels with your hearts</p>
+
+          <p>Thank you for coming! We have but one plea. 
+            Please keep our ceremony camera-free. <br> Though our 
+            I Do’s are unplugged, our reception is not. Once 
+            our vows are exchanged, you’re free to take a shot!</p><br>
+
         </div>
       
       </div>
@@ -172,11 +424,8 @@
       <footer>
         <ul class="foot">
           <li class="author">Wedding website designed in <i class="fa fa-copyright" aria-hidden="true"></i> 2023 by <a href="" target="_blank">Timothy.L</a></li>
-          <li><a href="">TWITTER</a></li>
           <li><a href="">YOUTUBE</a></li>
           <li><a href="">INSTAGRAM</a></li>
-          <li><a href="">FLICKR</a></li>
-          <li><a href="">LINKEDIN</a></li>
           <li><a href="">PRIVACY POLICY</a></li>
         </ul>
       </footer>

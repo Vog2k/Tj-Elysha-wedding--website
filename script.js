@@ -8,11 +8,15 @@ const dislike = document.querySelector('#dislike');
 
 // constants
 const urls = [
-  'https://source.unsplash.com/random/1000x1000/?sky',
-  'https://source.unsplash.com/random/1000x1000/?landscape',
-  'https://source.unsplash.com/random/1000x1000/?ocean',
-  'https://source.unsplash.com/random/1000x1000/?moutain',
-  'https://source.unsplash.com/random/1000x1000/?forest'
+  'img/fb.jpeg',
+  'img/FirstDate.jpeg',
+  'img/FirstXmas.jpeg',
+  'img/FirstXmas1.jpeg',
+  'img/halloweeen.jpeg',
+  'img/Rotovegas.jpeg',
+  'img/Whangamata.jpeg',
+  'img/wanaka.jpg',
+  'img/Pro.jpeg'
 ];
 
 // variables
@@ -21,7 +25,7 @@ let cardCount = 0;
 // functions
 function appendNewCard() {
   const card = new Card({
-    imageUrl: urls[cardCount % 5],
+    imageUrl: urls[cardCount % 9],
     onDismiss: appendNewCard,
     onLike: () => {
       like.style.animationPlayState = 'running';

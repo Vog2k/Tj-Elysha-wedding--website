@@ -36,7 +36,7 @@ html {
     padding: 0;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-left: 7%;
+    margin-left: 6%;
   }
   
   nav ul li {
@@ -277,6 +277,7 @@ html {
     font-size: 20px;
     text-align: center;
   }
+  
   .cart-button-style {
     border-style: none;
     position: fixed;

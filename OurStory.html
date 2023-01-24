@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elysha & Timothy Leatau</title>
-    <link rel="stylesheet" href="OurStory.css">
+    <link rel="stylesheet" href="./OurStory.css">
 </head>
 <body>
     <div class="navigation">
@@ -70,11 +70,15 @@
       </script>
       
       <div class="firstcontent">
-        <div class="firsttext">
+          
+          <video width="8000px" height="800px" muted autoplay loop>
+            <source src="video/Video for website.mp4" type="video/mp4">
+            
+          Your browser does not support the video tag.
+          </video>
           
           
-          
-        </div>
+
       
       </div>
 
@@ -83,21 +87,9 @@
       <div class="boxForTinder1">
         <ion-icon id="dislike" name="heart-dislike"></ion-icon>
         <div id="swiper">
-          <div class="card" style="--i:0">
-            <img src="https://source.unsplash.com/random/1000x1000/?sky" alt="">
-          </div>
-          <div class="card" style="--i:1">
-            <img src="https://source.unsplash.com/random/1000x1000/?landscape" alt="">
-          </div>
-          <div class="card" style="--i:2">
-            <img src="https://source.unsplash.com/random/1000x1000/?ocean" alt="">
-          </div>
-          <div class="card" style="--i:3">
-            <img src="https://source.unsplash.com/random/1000x1000/?moutain" alt="">
-          </div>
-          <div class="card" style="--i:4">
-            <img src="https://source.unsplash.com/random/1000x1000/?forest" alt="">
-          </div>
+
+
+    
         </div>
         <ion-icon id="like" name="heart"></ion-icon>
         
@@ -106,61 +98,10 @@
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
       
-        <script>
-          var returnedSuggestion = ''
-          let editor, doc, cursor, line, pos
-          document.addEventListener("keydown", (event) => {
-          setTimeout(()=>{
-            editor = event.target.closest('.CodeMirror');
-            if (editor){
-              doc = editor.CodeMirror.getDoc()
-              cursor = doc.getCursor()
-              line = doc.getLine(cursor.line)
-              pos = {line: cursor.line, ch: line.length}
-              if (event.key == "Enter"){
-                var query = doc.getRange({ line: Math.max(0,cursor.line-10), ch: 0 }, { line: cursor.line, ch: 0 })
-                window.postMessage({source: 'getSuggestion', payload: { data: query } } )
-                //displayGrey(query)
-              }
-              else if (event.key == "ArrowRight"){
-                acceptTab(returnedSuggestion)
-              }
-            }
-          }, 0)
-          })
-      
-          function acceptTab(text){
-          if (suggestionDisplayed){
-            doc.replaceRange(text, pos)
-            suggestionDisplayed = false
-          }
-          }
-          function displayGrey(text){
-          var element = document.createElement('span')
-          element.innerText = text
-          element.style = 'color:grey'
-          var lineIndex = pos.line;
-          editor.getElementsByClassName('CodeMirror-line')[lineIndex].appendChild(element)
-          suggestionDisplayed = true
-          }
-          window.addEventListener('message', (event)=>{
-          if (event.source !== window ) return
-          if (event.data.source == 'return'){
-            returnedSuggestion = event.data.payload.data
-            displayGrey(event.data.payload.data)
-          }
-          })
-        </script>
   </div>
 </div>
-
-
-
   <div class="thirdcontent">
     <div class="thirdtext">
-  
-
-  
     </div>
   </div>
       
@@ -182,8 +123,8 @@
         </div>
       </div>
       
-  <div class="thirdcontent">
-    <div class="thirdtext">
+      <div class="middlecontent">
+        <div class="middletext">
   
 
   
@@ -194,13 +135,7 @@
 
           <h1> Elysha Larking</h1>
 
-          <p>" I was feeling pretty low one day, and decided to try my luck on Tinder. I wasn't really expecting much, but I figured it couldn't hurt to put myself out there.
-            As I swiped through profiles, I came across a beautiful girl with a great smile. Her name was Elysha  Larking, and I couldn't help but feel drawn to her. I decided to take the plunge and message her.
-            To my surprise, she messaged first and beat me to it, right away we started chatting. We quickly discovered that we had a lot in common and we both shared
-            the same sense of humor. We made plans to meet up in person mid covid crisis , yes i know naughty haha but to our suprise 1 and half months down the track we finaly got to meet in person. <br> <br>
-            When I saw her in person, I knew right away that she was special. We had an instant connection and the conversation just flowed naturally. We talked for a total of 6 hours about everything and anything, and I knew I had to see her again.
-            We started dating and it's been a wild ride ever since. We've been together for over 2 years now and every day just keeps getting better. I never would have thought that I could find love on a dating app, but Elysha proved me wrong.
-            I'm so glad I swiped right that day on tinder, it was the best decision I've made."
+          <p>" Elysha "
              <br></p>
         </div>
       
@@ -209,11 +144,8 @@
       <footer>
         <ul class="foot">
           <li class="author">Wedding website designed in <i class="fa fa-copyright" aria-hidden="true"></i> 2023 by <a href="" target="_blank">Timothy.L</a></li>
-          <li><a href="">TWITTER</a></li>
           <li><a href="">YOUTUBE</a></li>
           <li><a href="">INSTAGRAM</a></li>
-          <li><a href="">FLICKR</a></li>
-          <li><a href="">LINKEDIN</a></li>
           <li><a href="">PRIVACY POLICY</a></li>
         </ul>
       </footer>
