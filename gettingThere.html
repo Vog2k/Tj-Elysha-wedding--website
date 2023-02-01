@@ -1,115 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elysha & Timothy Leatau</title>
-    <link rel="stylesheet" href="gettingThere.css">
-    <script src="gettingThere.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elysha & Timothy Leatau</title>
+  <link rel="stylesheet" href="gettingThere.css">
+  <script src="gettingThere.js"></script>
+  <!--Needs favicon-->
 </head>
+
 <body>
-    <div class="navigation">
-        <nav class="nav1" id="navbar">
-          <ul>
-            <a href="gettingThere.html" style="text-decoration: none; color: rgb(0, 0, 0); font-size: 30px; font-family: Didot; padding-right: 80px">Mr & Mrs Leatau</a>
-
-            <li><a class="nav-item" href="index.html" >Home</a></li>
-            <li><a class="nav-item" href="giftsAndReg.html">Gift & Reg</a></li>
-            <li><a class="nav-item" href="RSVP.html" >RSVP</a></li> 
-
-            <li><a class="nav-item" href="#">Schdule</a></li>
-            <li><a class="nav-item" href="gettingThere.html"  style=" text-shadow: 0 0 1px rgb(0, 0, 0);">Getting there</a></li>
-            <div class="ul2-holder">
-              <li class="ul2"><a href="OurStory.html">Our Story</a></li>
-              
-            </div>
-          </ul>
-        </nav>
-      </div>
-      <script>
-        var body = document.getElementsByTagName('nav')[0];
-        body.style.backgroundColor = 'White';
-
-        // trigger this function every time the user scrolls
-        window.onscroll = function (event) {
-            var scroll = window.pageYOffset;
-            if (scroll < 100) {
-                // green
-                body.style.backgroundColor = 'White';
-            } else if (scroll >= 100 && scroll < 200) {
-                // yellow
-                body.style.backgroundColor = 'White';
-            } 
-
-          }
-      </script>
-      
-      <div class="firstcontent">
-        <div class="firsttext">
-          
-          
-          <h1>Getting there<br></h1><br>
-        </div>
-      
-      </div>
-      <div class="secondcontent">
-        <div class="secondtext">
 
 
+  <div class="page-wrap">
+    <header class="page-header">
 
-            <header class="center-align">
+      <nav>
+        <h1>Mr & Mrs | Leatau</h1>
+        <ul>
 
-                <h1>Elysha & Timothy</h1>
-                <h6>Are getting married!</h6>
-                <h5>02.12.2023</h5>           
-                <h3>HUs - Boutique Venue & Accommodation<br>
-                    45 Croft Lane, Riverhead 0793 <br>
-                    
-                </h3><br>
-                <h1>Reception starts @ 2:00pm</h1>
-                <br>
-                <h1>Service starts @ 3:30pm </h1>
-                <br>
-
-            </header>
-      
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.8348420958305!2d174.6112298148833!3d-36.72652758038381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d3df2e5aa418d%3A0xe516d93f76a55e0!2sHUs%20-%20Boutique%20Venue%20%26%20Accommodation!5e0!3m2!1sen!2snz!4v1674251366462!5m2!1sen!2snz" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
-            <h6>Reception starts @ 2:00pm</h6>
-
-            <h6>Service starts @ 3:30pm </h6>
-            <br>
-            
-        </div>
-      </div>
-    </div>  
-
-
-
-      
-      <div class="fourthcontent">
-        <div class="fourthtext">
-
-          <h1>PLEASE RSVP BEFORE<br> OCTOBER 7TH 2023</h1>
-          <p>By RSVPing before October 7th, you will be helping us to ensure that the event runs smoothly <br>
-            and that everyone has an enjoyable experience. To RSVP, please click the button below.<br>
-            As you may already know, the event will be taking place on [date] and we are expecting <br>
-            a large turnout. In order for us to properly plan and prepare for the event, <br> it is crucial that we have an accurate headcount.<br> 
-            <br> We look forward to seeing you at the event and thank you <br> in advance for your prompt response.</p><br>
-
-          <button class="butt">LEARN MORE</button>
-        </div>
-      
-      </div>
-      
-      <footer>
-        <ul class="foot">
-          <li class="author">Wedding website designed in <i class="fa fa-copyright" aria-hidden="true"></i> 2023 by <a href="" target="_blank">Timothy.L</a></li>
-          <li><a href="">YOUTUBE</a></li>
-          <li><a href="">INSTAGRAM</a></li>
-          <li><a href="">PRIVACY POLICY</a></li>
+          <li id="burger" class="">
+            <span></span>
+            <span></span>
+            <span></span>
+          </li>
         </ul>
-      </footer>
+      </nav>
+
+      <main>
+
+        <article id="hero-1" style="--i: 5">
+
+          <div class="hero-info">
+
+            <h2 style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);"></h2>
+            <h1 style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);">Getting there</h1>
+            <h3 style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);"></h3>
+          </div>
+          <div class="hero-image hi-1" style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);"></div>
+        </article>
+
+        <article id="hero-2" style="--i: 4">
+          <div class="hero-info">
+            <h2 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Savour the</h2>
+            <h1 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Journey</h1>
+            <h3 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Papamoa, 37°41'22.1"S 176°16'00.4"E</h3>
+          </div>
+          <div class="hero-image hi-2" style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);"></div>
+
+        </article>
+
+        <article id="hero-3" style="--i: 3">
+          <div class="hero-info">
+            <h2 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Expand Your</h2>
+            <h1 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Horizons</h1>
+            <h3 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Lake Tekapo, 44°00'12.7"S 170°29'02.3"E</h3>
+          </div>
+          <div class="hero-image hi-3" style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);"></div>
+
+        </article>
+
+        <article id="hero-4" style="--i: 2">
+          <div class="hero-info">
+            <h2 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Explore and</h2>
+            <h1 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Reflect</h1>
+            <h3 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Rotorua, 38°09'25.6"S 176°16'27.5"E</h3>
+          </div>
+          <div class="hero-image hi-4" style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);"></div>
+
+        </article>
+
+        <article id="hero-5" style="--i: 1">
+          <div class="hero-info">
+            <h2 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Change Your</h2>
+            <h1 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Perspective</h1>
+            <h3 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Hastings, 39°38'12.9"S 176°49'47.4"E</h3>
+
+          </div>
+
+          <div class="hero-image hi-5"></div>
+        </article>
+      </main>
+    </header>
+
+    <section style="display: none; clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);">
+      <ul class="level-1">
+        <li>
+          <h3>Navigation</h3>
+          <ul class="level-2">
+            <li>
+              <a href="giftsAndReg.html">
+                <p>Gifts and more </p>
+              </a>
+              <ul class="level-3">
+                <li>Wishing well</li>
+                <li>Wishing well</li>
+                <li>Wishing well</li>
+                <li>Wishing well</li>
+
+              </ul>
+            </li>
+            <li>
+              <p>Location</p>
+              <ul class="level-3">
+
+                <a href="https://hus.nz/ " target="_blank">
+                  <li>HUs - Boutique Venue & Accommodation</li>
+                </a>
+                <a href="https://hus.nz/venue#weddings" target="_blank">
+                  <li>Wedding packages</li>
+                </a>
+                <a href="https://hus.nz/art" target="_blank">
+                  <li>HUs Art</li>
+                </a>
+                <a href="https://hus.nz/contact" target="_blank">
+                  <li>Contact HUs</li>
+                </a>
+                <li>Wishing well</li>
+                <li>Wishing well</li>
+                <li>Wishing well</li>
+                <li>Wishing well</li>
+              </ul>
+            </li>
+            <li>
+              <p>RSVP</p>
+              <ul class="level-3">
+                <li>Wishing well</li>
+                <li>Wishing well</li>
+                <li>Wishing well</li>
+              </ul>
+            </li>
+            <li>
+              <p>Schdule</p>
+              <ul class="level-3">
+                <li>Wishing well</li>
+                <li>Wishing well</li>
+                <li>Wishing well</li>
+                <li>Wishing well</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3>Travel Tips</h3>
+          <ul>
+            <li>Going on a trip</li>
+            <li>Travel Insurance</li>
+            <li>Working abroad</li>
+            <li>Saving</li>
+            <li>Instagram tips</li>
+          </ul>
+          <p><small>More tips...</small></p>
+        </li>
+        <li>
+          <h3>Resources</h3>
+          <ul>
+            <li>Personalised travel advice</li>
+            <li>Where we book our travels</li>
+            <li>Become a booking agent</li>
+          </ul>
+          <p><small>More resources...</small></p>
+        </li>
+        <li>
+          <h3>About Us</h3>
+          <ul>
+            <li>Our story</li>
+            <li>Work with us</li>
+            <li>Instagram</li>
+            <li>YouTube</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+  </div>
+  <script
+    src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+  <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+  <script id="rendered-js">
+    let burger = document.getElementById("burger");
+    let overlay = document.querySelector("section");
+    let heroImage = document.querySelector(".hero-image");
+    let showMenu = false;
+    let del = 3;
+    let i = 1;
+
+    let tl = gsap.timeline({
+      repeat: -1,
+      yoyo: true,
+      ease: "expo.out"
+    });
+
+
+    overlay.style.display = "none";
+
+    burger.addEventListener("click", e => {
+      showMenu = !showMenu;
+      if (showMenu) {
+        burger.classList.add("active");
+        overlay.style.display = "block";
+        gsap.to(overlay, 1, {
+          clipPath: "polygon(0% 0%, 100% 0, 100% 100%, 0% 100%)",
+          ease: "expo.in"
+        });
+
+      } else {
+        burger.classList.remove("active");
+        gsap.to(overlay, 1, {
+          clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+          ease: "expo.out",
+          onComplete: () => overlay.style.display = "none"
+        });
+
+      }
+    });
+
+    gsap.set(["#hero-1 h2, #hero-1 h1, #hero-1 h3"], {
+      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
+    });
+
+
+    gsap.set(
+      [
+        `#hero-2 h2, #hero-3 h2, #hero-4 h2, #hero-5 h2,
+       #hero-2 h1, #hero-3 h1, #hero-4 h1, #hero-5 h1,
+       #hero-2 h3, #hero-3 h3, #hero-4 h3, #hero-5 h3`],
+
+      {
+        clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"
+      });
+
+
+
+    while (i < 5) {
+      if (window.CP.shouldStopExecution(0)) break;
+      tl.to(`#hero-${i} h2`, 0.9, {
+        clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)",
+        delay: del
+      }).
+
+        to(
+          `#hero-${i} h1`,
+          0.9,
+          {
+            clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"
+          },
+
+          "-=0.3").
+
+        to(
+          `#hero-${i} h3`,
+          0.9,
+          {
+            clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"
+          },
+
+          "-=0.3").
+
+        to(
+          `#hero-${i} .hi-${i}`,
+          0.7,
+          {
+            clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"
+          },
+
+          "-=1").
+
+        to(`#hero-${i + 1} h2`, 0.9, {
+          clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
+        }).
+
+        to(
+          `#hero-${i + 1} h1`,
+          0.9,
+          {
+            clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
+          },
+
+          "-=0.3").
+
+        to(
+          `#hero-${i + 1} h3`,
+          0.9,
+          {
+            clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
+          },
+
+          "-=0.3");
+
+
+      i++;
+    } window.CP.exitedLoop(0);
+  //# sourceURL=pen.js
+  </script>
+
+  <link href="https://fonts.cdnfonts.com/css/sunnyletter" rel="stylesheet">
+
+
+
+
+
+  </div>
+
+  </div>
+  <div class="secondcontent">
+    <div class="secondtext">
+
+
+
+      <header class="map">
+
+        <h1>Elysha & Timothy</h1>
+        <h6>Are getting married!</h6>
+        <h5>02.12.2023</h5>
+        <h3>HUs - Boutique Venue & Accommodation<br>
+          45 Croft Lane, Riverhead 0793 <br>
+
+        </h3><br>
+        <h1>Reception starts @ 2:00pm</h1>
+        <br>
+        <h1>Service starts @ 3:30pm </h1>
+        <br>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6395.669316110527!2d174.613419!3d-36.726532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe516d93f76a55e0!2sHUs%20-%20Boutique%20Venue%20%26%20Accommodation!5e0!3m2!1sen!2snz!4v1674771397196!5m2!1sen!2snz"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <h6>Reception starts @ 2:00pm</h6>
+
+        <h6>Service starts @ 3:30pm </h6>
+        <br>
+      </header>
+
+
+
+    </div>
+  </div>
+  </div>
+
+
+
+
+  <div class="fourthcontent">
+    <div class="fourthtext">
+
+      <h1>Dear friends and family<br>Created By AI</h1>
+      <br>
+      <p>
+        We are thrilled to invite you to our wedding, which will take place on [date] at [location]. We understand that
+        many of you will be traveling to celebrate with us, and we want to make sure you have all the information you
+        need to make your journey as smooth as possible.
+<br><br>
+        The wedding will take place at [venue name], and we have arranged for [hotel name(s)] to offer a special rate
+        for our guests. You can book your room by [date] by [providing the booking information].
+<br><br>
+        For those who will be driving, [provide parking and directions information]. For those who will be flying, the
+        nearest airport is [airport name], and we recommend [provide transportation options from the airport to the
+        wedding].
+<br><br>
+        Please let us know if you have any special needs or requests. We want to make sure your travel experience is as
+        comfortable and enjoyable as possible.
+<br><br>
+        We are so grateful that you will be joining us on our special day.
+        With love and gratitude,
+        [Couple's Names]"</p><br>
+
+      <button class="butt">LEARN MORE</button>
+    </div>
+
+  </div>
+
+  <footer>
+    <ul class="foot">
+      <li class="author">Wedding website designed in <i class="fa fa-copyright" aria-hidden="true"></i> 2023 by <a
+          href="" target="_blank">Timothy.L</a></li>
+      <li><a href="">YOUTUBE</a></li>
+      <li><a href="">INSTAGRAM</a></li>
+      <li><a href="">PRIVACY POLICY</a></li>
+    </ul>
+  </footer>
 </body>
+
 </html>
