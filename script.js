@@ -16,7 +16,12 @@ const urls = [
   'img/Rotovegas.jpeg',
   'img/Whangamata.jpeg',
   'img/wanaka.jpg',
-  'img/Pro.jpeg'
+  'img/Pro.jpeg',
+  'img/Lake.jpeg',
+  'img/Mall.jpeg',
+  'img/Roto.jpeg',
+  'img/eight.jpeg',
+
 ];
 
 // variables
@@ -25,7 +30,7 @@ let cardCount = 0;
 // functions
 function appendNewCard() {
   const card = new Card({
-    imageUrl: urls[cardCount % 9],
+    imageUrl: urls[cardCount % 12],
     onDismiss: appendNewCard,
     onLike: () => {
       like.style.animationPlayState = 'running';

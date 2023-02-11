@@ -20,6 +20,7 @@ html {
 
 }
 /*Body*/
+
 .boxForTinder1{
   display: flex;
   justify-content: space-evenly;
@@ -263,17 +264,7 @@ html {
 
   }
 
-  html {
-    background: rgb(255, 255, 255);
-    -webkit-font-smoothing: antialiased;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-  }
-  
+
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
   
   * {
@@ -425,6 +416,7 @@ html {
     background-repeat: no-repeat;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
+
   
   .hi-1 {
     background-image: url("img/1st\ date.jpg");
@@ -438,11 +430,11 @@ html {
   }
   
   .hi-4 {
-    background-image: url("img/Lake\ hawea.jpg");
+    background-image: url("img/Xmas.jpeg");
   }
   
   .hi-5 {
-    background-image: url("");
+    background-image: url("img/Lake\ hawea.jpg");
   }
   
   section {
@@ -613,7 +605,7 @@ html {
   
   }
   
-  
+
   .firsttext {
     padding: 0px 0px 0px 0px;
     position: relative;
@@ -969,14 +961,14 @@ html {
   
   @media all and (max-width: 768px) {
     .fourthcontent {
-      background: url(img/Reception.jpeg) rgba(0, 0, 0, 0.6) no-repeat center center;
+      background: url(img//Tj\ and\ elysha.jpg) rgba(0, 0, 0, 0.6) no-repeat center center;
       background-blend-mode: multiply;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
       padding-top: 140px;
-      margin: 80px 0px 0px 0px;
+      margin: 0px 0px 0px 0px;
     }
   
     .fourthtext {
@@ -991,13 +983,7 @@ html {
       font-weight: lighter;
     }
   
-    .fourthtext p {
-      font-size: 18px;
-      font-family: Barlow;
-      text-transform: none;
-      word-spacing: 2px;
-      font-weight: lighter;
-    }
+
   
     .fifthcontent {
       background: url(img/unplugged.jpeg) rgba(0, 0, 0, 0.6) no-repeat center center;
