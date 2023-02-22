@@ -26,7 +26,6 @@ body {
 }
 
 .secondcontent {
-  background: url() no-repeat center center;
   padding-top: 50px;
   margin: 0px;
 }
@@ -37,12 +36,24 @@ body {
   position: relative;
   z-index: 2;
   color: rgb(0, 0, 0);
-  text-transform: uppercase;
+  text-transform: none;
   font-family: sans-serif;
   font-size: 20px;
   text-align: center;
 }
-
+#Gifts{
+  font-weight: lighter;
+  padding: 150px 0px 80px 0px;
+  position: relative;
+  z-index: 2;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
 
 .cart-button-style:hover,
@@ -259,76 +270,6 @@ body {
   border-radius: 4px;
 }
 
-.thirdcontent {
-  background: #000;
-  padding-top: 80px;
-  margin: 0;
-  height: 90%;
-
-}
-
-.thirdtext {
-  display: inline-block;
-  padding: 0px 80px;
-  position: relative;
-  z-index: 2;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  font-family: sans-serif;
-  font-size: 20px;
-  width: 28%;
-  height: 200px;
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
-  font-weight: lighter;
-}
-
-.thirdtext h1 {
-  padding: 0px 0px;
-  font-size: 36px;
-  word-spacing: 2px;
-  font-weight: lighter;
-}
-
-.thirdtext p {
-  font-size: 18px;
-  font-family: Barlow;
-  text-transform: none;
-  word-spacing: 2px;
-  font-weight: lighter;
-}
-
-.fourthcontent {
-  background: url(img/Reception.jpeg) rgba(0, 0, 0, 0.6) no-repeat center center;
-  background-blend-mode: multiply;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 40px;
-  margin: 0;
-}
-
-.fourthtext {
-  padding: 180px 160px 80px 0px;
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  font-size: 20px;
-  text-align: right;
-  font-weight: lighter;
-}
-
-.fourthtext p {
-  font-size: 16px;
-  font-family: Barlow;
-  text-transform: none;
-  word-spacing: 2px;
-  font-weight: lighter;
-}
 
 html {
   background: rgb(255, 255, 255);
@@ -707,8 +648,8 @@ section {
     position: relative;
     z-index: 2;
     color: rgb(0, 0, 0);
-    font-family: 'Sunnyletter', sans-serif;
-    font-size: 80px;
+    font-family: sans-serif;
+    font-size: 30px;
     text-align: center;
     margin: 0px;
 
@@ -761,7 +702,7 @@ section {
 
 .thirdtext {
   display: inline-block;
-  padding: 0px 100px;
+  padding: 0px 0px;
   position: relative;
   z-index: 2;
   color: rgb(255, 255, 255);
@@ -777,10 +718,33 @@ section {
 }
 
 .thirdtext h1 {
-  padding: 0px 0px;
+  padding: 0px 50px;
   font-size: 46px;
   word-spacing: 2px;
   font-weight: lighter;
+
+}
+
+#wishingWell{
+  padding: 0px 50px;
+  font-size: 46px;
+  word-spacing: 2px;
+  font-weight: lighter;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.wishingP{
+  font-size: 20px;
+  font-family: Barlow;
+  text-transform: none;
+  word-spacing: 2px;
+  font-weight: lighter;
+  padding: 0px 0px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
 }
 
 .thirdtext p {
@@ -789,7 +753,8 @@ section {
   text-transform: none;
   word-spacing: 2px;
   font-weight: lighter;
-  padding: 25px 0px;
+  padding: 25px 50px;
+  
 }
 
 
@@ -882,7 +847,7 @@ section {
 }
 
 .fourthtext {
-  padding: 180px 160px 80px 0px;
+  padding: 80px 160px 80px 0px;
   position: relative;
   z-index: 2;
   color: #fff;
