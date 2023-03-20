@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elysha & Timothy Leatau</title>
+  <title>Elysha & Timothy Leatau Our story  </title>
   <link rel="stylesheet" href="OurStory.css">
   <script src="index.js"></script>
-  <!--Needs favicon-->
+  <link rel="shortcut icon" href="/img/icons8-romance-32.png" type="image/x-icon">  </head>
+
 </head>
 
 <body>
@@ -21,14 +22,36 @@
         <h1>Mr & Mrs | Leatau</h1>
         <ul>
 
-          <li id="burger" class="">
+          <li onclick="topFunction()" id="burger" title="Go to top">
+            <span></span>
             <span></span>
             <span></span>
             <span></span>
           </li>
         </ul>
       </nav>
-
+      <script>
+        // Get the button
+        let mybutton = document.getElementById("burger");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "flex";
+          } else {
+            mybutton.style.display = "flex";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        <!--2 Here-->
       <main>
         <article id="hero-1" style="--i: 5">
           <div class="hero-info">
@@ -122,7 +145,8 @@
             </li>
             <li>
             <li>
-              <p>RSVP</p>
+              <a href="RSVP.html">
+              <p>RSVP</p></a>
               <ul class="level-3">
                 <li>Wishing well</li>
                 <li>Wishing well</li>
@@ -130,7 +154,8 @@
               </ul>
             </li>
             <li>
-              <p>Schdule</p>
+              <a href="giftsAndReg.html">
+              <p>Gifts</p></a>
               <ul class="level-3">
                 <li>Wishing well</li>
                 <li>Wishing well</li>
