@@ -19,6 +19,7 @@
       <nav>
         <h1>Mr & Mrs | Leatau</h1>
         <ul>
+          
 
           <li onclick="topFunction()" id="burger" title="Go to top">
             <span></span>
@@ -53,22 +54,12 @@
       <main>
         <article id="hero-1" style="--i: 5">
           <div class="hero-info">
-            <h2 style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);">Gift and registry</h2>
-            <h1 style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);"></h1>
-            <h3 style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);"></h3>
+            <h2 style=>Registry details</h2>
+
           </div>
           <div class="hero-image hi-1" style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);"></div>
         </article>
 
-        <article id="hero-2" style="--i: 4">
-          <div class="hero-info">
-            <h2 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">Thank you</h2>
-            <h1 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);">For helping us start a new chapter</h1>
-            <h3 style="clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);"></h3>
-          </div>
-          <div class="hero-image hi-2" style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);"></div>
-
-        </article>
 
       </main>
 
@@ -84,90 +75,35 @@
               <a href="index.html">
                 <p>Home </p>
               </a>
-              <ul class="level-3">
-                <li>Wishing well</li>
-                <li>Wishing well</li>
-                <li>Wishing well</li>
-                <li>Wishing well</li>
 
-              </ul>
             </li>
             <li>
               <a href="gettingThere.html">
-                <p>Location</p>
+                <p>The Details</p>
               </a>
-              <ul class="level-3">
 
-                <a href="https://www.matakanaestate.co.nz/" target="_blank">
-                  <li>Matakana estate</li>
-                </a>
-                <a href="https://www.matakanaestate.co.nz/events-venue-hire-matakana/" target="_blank">
-                  <li>Events</li>
-                </a>
-                <a href="https://www.matakanaestate.co.nz/cellar-door-wines/" target="_blank">
-                  <li>Wine</li>
-                </a> <a href="https://www.matakanaestate.co.nz/matakana-estate-accommodation/" target="_blank">
-                  <li>Matakana estate accommodation</li>
-                </a>
-                <a href="https://www.matakanaestate.co.nz/contact-us/" target="_blank">
-                  <li>Contact</li>
-                </a>
-              </ul>
             </li>
             <li>
-            <li>
+              <a href="gettingThere.css">
+              <p>Getting There</p>
+</a>
+        </li>
             <li>
               <a href="RSVP.html">
               <p>RSVP</p></a>
-              <ul class="level-3">
-                <li>Wishing well</li>
-                <li>Wishing well</li>
-                <li>Wishing well</li>
-              </ul>
+
             </li>
-            <li>
-              <p>Schdule</p>
-              <ul class="level-3">
-                <li>Wishing well</li>
-                <li>Wishing well</li>
-                <li>Wishing well</li>
-                <li>Wishing well</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
+
         <li>
-          <h3>Travel Tips</h3>
-          <ul>
-            <li>Going on a trip</li>
-            <li>Travel Insurance</li>
-            <li>Working abroad</li>
-            <li>Saving</li>
-            <li>Instagram tips</li>
-          </ul>
-          <p><small>More tips...</small></p>
+          <a href="RSVP.html">
+          <p>Our Story</p></a>
+
         </li>
-        <li>
-          <h3>Resources</h3>
-          <ul>
-            <li>Personalised travel advice</li>
-            <li>Where we book our travels</li>
-            <li>Become a booking agent</li>
-          </ul>
-          <p><small>More resources...</small></p>
-        </li>
-        <li>
-          <h3>About Us</h3>
-          <ul>
-            <a href="OurStory.html">
-              <li>Our story</li>
-            </a>
-            <a href="OurStory.html">
-              <li>Instagram</li>
-            </a>
-          </ul>
-        </li>
-      </ul>
+
+           
+       
+
+
     </section>
 
   </div>
@@ -187,9 +123,6 @@
       yoyo: true,
       ease: "expo.out"
     });
-
-
-    overlay.style.display = "none";
 
     burger.addEventListener("click", e => {
       showMenu = !showMenu;
@@ -212,10 +145,6 @@
       }
     });
 
-    gsap.set(["#hero-1 h2, #hero-1 h1, #hero-1 h3"], {
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
-    });
-
 
     gsap.set(
       [
@@ -229,7 +158,7 @@
 
 
 
-    while (i < 2) {
+    while (i < 0) {
       if (window.CP.shouldStopExecution(0)) break;
       tl.to(`#hero-${i} h2`, 0.9, {
         clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)",
@@ -299,162 +228,42 @@
       <div>
         <a id="Gifts">Gifts</a>
         <br><br>
-        <p>For those who wish to honour us with a gift, a small list of suggestions has been registered with...{insert
-          registry details}</p>
+<p>We are grateful for your presence at our wedding, and your love and support means the world to us. 
+  As we start our life together, we appreciate any contributions towards our future. <br><br> For your 
+  convenience, we have set up registries at the links below. Additionally, if you prefer to give a 
+  monetary gift towards our honeymoon, we have provided our bank account details for your reference. <br><br>
+  We appreciate your generosity and look forward to celebrating with you!</p>
+  <br><br>
+
+<!--For those who wish to honour us with a gift, a small list of suggestions has been registered with Briscoes. Please see the link if you would like to send us a gift thanks.-->
+        <a href="https://www.briscoes.co.nz/gift-registry/find-registry/" target="
+          " >Briscoes Gift Registry</a>
+
+          <br><br>
+
+          <p class="bank-dets">Bank details: 02-0548-0030459-016 <br><br> (If your bank only allows two digits at the end, put 16 instead of 016) </p>
       </div>
 
 
 
-      <div id="shop">
-
-        <div class="products ios apple" id="iphone-x">
-          <img class="product-image"
-            src="https://www.briscoes.co.nz/globalassets/productimages/briscoes/1096526005/1096526005_default_1.jpg?CatalogContentZoom-1015172-1000-1000-75-0,0">
-          <p class="product-name">Royal Doulton Aria 1000TC Cotton Sheet Set</p>
-          <br>
-          <p class="product-description">Colour Charcoal : Size King</p>
-
-          <p class="product-price" value='999'>459.99</p>
-          <a href="https://www.briscoes.co.nz/product/1096526/royal-doulton-aria-1000tc-cotton-sheet-set/"
-            target="_blank">
-            <br>
-            <button class="add-to-cart" id='test'>Visit</button></a>
-        </div>
-
-        <div class="products ios apple" id="iphone-x">
-          <img class="product-image"
-            src="https://www.briscoes.co.nz/globalassets/productimages/briscoes/1096526005/1096526005_default_1.jpg?CatalogContentZoom-1015172-1000-1000-75-0,0">
-          <p class="product-name">Royal Doulton Aria 1000TC Cotton Sheet Set</p>
-          <br>
-          <p class="product-description">Colour Charcoal : Size King</p>
-
-          <p class="product-price" value='999'>459.99</p>
-          <a href="https://www.briscoes.co.nz/product/1096526/royal-doulton-aria-1000tc-cotton-sheet-set/"
-            target="_blank">
-            <br>
-            <button class="add-to-cart" id='test'>Visit</button></a>
-        </div>
-
-        <div class="products ios apple" id="iphone-x">
-          <img class="product-image"
-            src="https://www.briscoes.co.nz/globalassets/productimages/briscoes/1096526005/1096526005_default_1.jpg?CatalogContentZoom-1015172-1000-1000-75-0,0">
-          <p class="product-name">Royal Doulton Aria 1000TC Cotton Sheet Set</p>
-          <br>
-          <p class="product-description">Colour Charcoal : Size King</p>
-
-          <p class="product-price" value='999'>459.99</p>
-          <a href="https://www.briscoes.co.nz/product/1096526/royal-doulton-aria-1000tc-cotton-sheet-set/"
-            target="_blank">
-            <br>
-            <button class="add-to-cart" id='test'>Visit</button></a>
-        </div>
-
-        <div class="products ios apple" id="iphone-x">
-          <img class="product-image"
-            src="https://www.briscoes.co.nz/globalassets/productimages/briscoes/1096526005/1096526005_default_1.jpg?CatalogContentZoom-1015172-1000-1000-75-0,0">
-          <p class="product-name">Royal Doulton Aria 1000TC Cotton Sheet Set</p>
-          <br>
-          <p class="product-description">Colour Charcoal : Size King</p>
-
-          <p class="product-price" value='999'>459.99</p>
-          <a href="https://www.briscoes.co.nz/product/1096526/royal-doulton-aria-1000tc-cotton-sheet-set/"
-            target="_blank">
-            <br>
-            <button class="add-to-cart" id='test'>Visit</button></a>
-        </div>
-
-        <div class="products ios apple" id="iphone-x">
-          <img class="product-image"
-            src="https://www.briscoes.co.nz/globalassets/productimages/briscoes/1096526005/1096526005_default_1.jpg?CatalogContentZoom-1015172-1000-1000-75-0,0">
-          <p class="product-name">Royal Doulton Aria 1000TC Cotton Sheet Set</p>
-          <br>
-          <p class="product-description">Colour Charcoal : Size King</p>
-
-          <p class="product-price" value='999'>459.99</p>
-          <a href="https://www.briscoes.co.nz/product/1096526/royal-doulton-aria-1000tc-cotton-sheet-set/"
-            target="_blank">
-            <br>
-            <button class="add-to-cart" id='test'>Visit</button></a>
-        </div>
-
-        <div class="products ios apple" id="iphone-x">
-          <img class="product-image"
-            src="https://www.briscoes.co.nz/globalassets/productimages/briscoes/1096526005/1096526005_default_1.jpg?CatalogContentZoom-1015172-1000-1000-75-0,0">
-          <p class="product-name">Royal Doulton Aria 1000TC Cotton Sheet Set</p>
-          <br>
-          <p class="product-description">Colour Charcoal : Size King</p>
-
-          <p class="product-price" value='999'>459.99</p>
-          <a href="https://www.briscoes.co.nz/product/1096526/royal-doulton-aria-1000tc-cotton-sheet-set/"
-            target="_blank">
-            <br>
-            <button class="add-to-cart" id='test'>Visit</button></a>
-        </div>
-
-        <div class="products ios apple" id="iphone-x">
-          <img class="product-image"
-            src="https://www.briscoes.co.nz/globalassets/productimages/briscoes/1096526005/1096526005_default_1.jpg?CatalogContentZoom-1015172-1000-1000-75-0,0">
-          <p class="product-name">Royal Doulton Aria 1000TC Cotton Sheet Set</p>
-          <br>
-          <p class="product-description">Colour Charcoal : Size King</p>
-
-          <p class="product-price" value='999'>459.99</p>
-          <a href="https://www.briscoes.co.nz/product/1096526/royal-doulton-aria-1000tc-cotton-sheet-set/"
-            target="_blank">
-            <br>
-            <button class="add-to-cart" id='test'>Visit</button></a>
-        </div>
-
-        <div class="products ios apple" id="iphone-x">
-          <img class="product-image"
-            src="https://www.briscoes.co.nz/globalassets/productimages/briscoes/1096526005/1096526005_default_1.jpg?CatalogContentZoom-1015172-1000-1000-75-0,0">
-          <p class="product-name">Royal Doulton Aria 1000TC Cotton Sheet Set</p>
-          <br>
-          <p class="product-description">Colour Charcoal : Size King</p>
-
-          <p class="product-price" value='999'>459.99</p>
-          <a href="https://www.briscoes.co.nz/product/1096526/royal-doulton-aria-1000tc-cotton-sheet-set/"
-            target="_blank">
-            <br>
-            <button class="add-to-cart" id='test'>Visit</button></a>
-        </div>
-      </div>
+      
 
     </div>
-    <div id='cart-wrapper' class="slider close">
-      <div id='cart'>
-        <div id="cart-products-wrapper">
-          <table id="cart-table">
-            <thead id="cart-table-header">
-              <th class="name-col">Product Name</th>
-              <th class="quantity-col">Quantity</th>
-              <th class="price-col">Price</th>
-              <th class="updated-price-col">Updated Price</th>
-              <th class="update-col">Update</th>
-              <th class="remove-col">Remove</th>
-            </thead>
-            <tbody id="cart-table-body"></tbody>
-          </table>
-        </div>
-      </div>
-
-
-    </div>
-
-  </div>
   </div>
 
-
-
-  <div class="thirdcontent">
+<div class="thirdcontent">
     <div class="thirdtext">
+
 
       <h1 id="wishingWell">Wishing well</h1>
       <p class="wishingP">Your presence at our wedding is the greatest gift of all. However, should you wish to honour
         us with a gift, a contribution to our honeymoon would help to create memories that will last a lifetime. A
         wishing well will be available on the day.
-      </p><br>
 
+      </p>
+      <h1> Mocktail $500</h1>
+    </div>
+</div>
       <div class="fourthcontent">
         <div class="fourthtext">
 

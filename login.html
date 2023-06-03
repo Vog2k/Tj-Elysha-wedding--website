@@ -4,28 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="login-box">
-        <h2>Login</h2>
-        <form>
-          <div class="user-box">
-            <input type="text" name="" required="">
-            <label>Username</label>
-          </div>
-          <div class="user-box">
-            <input type="password" name="" required="">
-            <label>Password</label>
-          </div>
-          <a href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Submit
-          </a>
-        </form>
-      </div>
-</body>
-</html>
+    <link rel="stylesheet" href="login.css">
+      <link rel="shortcut icon" href="/img/icons8-romance-32.png" type="image/x-icon">
+    <title>Elysha & Timothy Login</title>
+
+  </head>
+  <body>
+
+    <div class="firstContent">
+      
+    </div>
+
+    <div class="container">
+      <h2>Enter Password</h2>
+      <form id="passwordForm">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+  
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  
+    <script>
+      const form = document.getElementById('passwordForm');
+  
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+  
+        const password = document.getElementById('password').value;
+  
+        if (password === 'Leatau') {
+          window.location.href = 'index.html'; // Redirect to next page
+        } else {
+          alert('Incorrect password. Please try again.'); // Show error message
+        }
+      });
+    </script>
+  </body>
+  </html>
