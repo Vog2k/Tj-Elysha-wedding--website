@@ -300,24 +300,9 @@ html {
   
   
   .hi-1 {
-    background-image: url("img/Whangamata.jpeg");
+    background-image: url("img/Bethals.jpg");
   }
   
-  .hi-2 {
-    background-image: url("img/eight.jpeg");
-  }
-  
-  .hi-3 {
-    background-image: url("img/T\ \(2\).jpg");
-  }
-  
-  .hi-4 {
-    background-image: url("img/Rotovegas.jpeg");
-  }
-  
-  .hi-5 {
-    background-image: url("img/received_612150762793651.jpeg");
-  }
   
   section {
     position: absolute;
@@ -536,21 +521,9 @@ html {
   
       transition: transform 0.3s 0.3s;
     }
-  
+
     .hi-1 {
-      background-image: url("img/FirstDate.jpeg");
-    }
-  
-    .hi-2 {
-      background-image: url("img/Mall.jpeg");
-    }
-  
-    .hi-3 {
-      background-image: url("img/skytower.jpeg");
-    }
-  
-    .hi-5 {
-      background-image: url("img/eight.jpeg");
+      background-image: url("img/Bethals.jpg");
     }
   }
   
