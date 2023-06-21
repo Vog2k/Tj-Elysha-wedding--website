@@ -624,14 +624,17 @@ html {
       flex-direction: column;
       justify-content: space-evenly;
       cursor: pointer;
+  
     }
   
     #burger span {
       display: block;
-      height: 3px;
+      height: 2px;
+      /*Change on  mobile */
       width: 22px;
-      background-color: var(--red);
-      border-radius: 200px;
+      background-color: var(--white);
+      /*Change on  mobile */
+  
       transition: transform 0.3s 0.3s;
     }
   
@@ -905,8 +908,8 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding: 140px;
-    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
   }
   
   .fifthcontent {
@@ -1037,18 +1040,29 @@ html {
     }
   
     .fourthtext {
-      padding: 20px 20px;
+      padding: 0px 0px 0px 0px;
+      margin: 0px;
       position: relative;
       z-index: 2;
       color: #fff;
       text-transform: uppercase;
       font-family: sans-serif;
-      font-size: 20px;
+      font-size: 10px;
       text-align: center;
       font-weight: lighter;
     }
   
+    .fourthtext p{
+      padding: 0px 0px 50px 0px;
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      font-family: sans-serif;
+      font-size: 15px;
 
+      font-weight: lighter;
+    }
+  
   
     .fifthcontent {
       background: url(img/unplugged.jpeg) rgba(0, 0, 0, 0.6) no-repeat center center;
@@ -1059,7 +1073,7 @@ html {
       background-size: cover;
       padding-top: 40px;
       height: 800px;
-      margin: 0px 0px 80px 0px;
+      margin: 0px 0px 0px 0px;
     }
   
     .fifthtext {
@@ -1083,41 +1097,38 @@ html {
     }
   
     .foot {
+      width: 100%;
       display: flex;
+      flex-direction: column-reverse;
       color: #fff;
       list-style: none;
       margin: 0;
+      /*Change on  mobile */
       padding: 0;
-      padding-top: 30px;
+      padding-top: 0px;
       padding-bottom: 0px;
       text-align: center;
-      margin-left: 0%;
-      width: 100%;
+  
     }
   
     .foot li {
       text-align: center;
-      margin-left: 0%;
-      font-size: 22px;
+      padding: 0px 0px 10px 0px;
+      /*Change on  mobile */
+      font-size: 25px;
       font-weight: 500;
       font-family: sans-serif;
-      width: 100%;
     }
   
     .author {
-      font-size: 12px;
-      color: #8b939b;
-      margin: 0;
+      font-size: 20px;
+      color: #ffffff;
+      margin: 10px 5px;
       padding: 0;
-      margin-left: 10px;
+      margin-left: 0px;
       text-align: center;
     }
   
-    .author a {
-      text-decoration: none;
-      color: #ff939b;
-      font-weight: 600;
-    }
   
     a {
       text-decoration: none;
@@ -1125,7 +1136,7 @@ html {
     }
   
     a:hover {
-      color: rgb(211, 10, 10);
+      color: rgb(128, 128, 128);
       transition-timing-function: ease-in;
       transition: 0.2s;
     }

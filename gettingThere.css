@@ -317,12 +317,12 @@ header h5 {
   }
   
   .level-1 ul>li:hover {
-    color: var(--red);
-    cursor: pointer;
+    color: var(--black);
+    
   }
   
   .level-1 li:nth-of-type(1) {
-    grid-column: 1/2;
+    grid-column: 1/3;
     grid-row: 1/4;
   }
   
@@ -346,12 +346,12 @@ header h5 {
   }
   
   .level-2 li p {
-    color: var(--red);
-    font-size: 1.3rem;
+    color: var(--black);
+    font-size: 1.5rem;
     font-weight: 600;
     margin: 1em 0;
-    text-transform: uppercase;
-    border-bottom: 1px solid #ce8600;
+    
+    border-bottom: 1px solid #000000;
   }
   
   .level-3 {
@@ -361,13 +361,31 @@ header h5 {
   
   .level-3 li {
     padding: 0.5em 1em !important;
-    background-color: var(--pill);
-    border-radius: 500px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem !important;
+    color: black;
+  }
+  .level-3 li a{
+    padding: 0.5em 1em !important;
+    text-decoration: none;
     margin-right: 10px;
     margin-bottom: 10px;
     font-size: 1rem !important;
     cursor: pointer;
-    color: var(--black);
+    color: black;
+  }
+  .level-4 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .level-4 li {
+    padding: 0.5em 1em !important;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: var(--white);
   }
   
   @media screen and (max-width: 600px) {
@@ -425,14 +443,17 @@ header h5 {
       flex-direction: column;
       justify-content: space-evenly;
       cursor: pointer;
+  
     }
   
     #burger span {
       display: block;
-      height: 3px;
+      height: 2px;
+      /*Change on  mobile */
       width: 22px;
-      background-color: var(--red);
-      border-radius: 200px;
+      background-color: var(--white);
+      /*Change on  mobile */
+  
       transition: transform 0.3s 0.3s;
     }
   
@@ -714,8 +735,8 @@ header h5 {
     -o-background-size: cover;
     background-size: cover;
     padding-top: 0px;
-    height: 1000px;
-    margin: 0px 0px 80px 0px;
+    height: 800px;
+    margin: 0px 0px 0px 0px;
   }
   
   .fifthtext {
@@ -739,67 +760,193 @@ header h5 {
     width: 100%;
     height: 80%;
   }
-  
+  footer {
+    display: flex;
+    color: #0a0a0a;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    text-align: center;
+
+    background-color: #000000;
+  }
   .foot {
     display: flex;
     color: #fff;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    padding-top: 30px;
-    padding-bottom: 0px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    padding-bottom: 50px;
     text-align: center;
-    margin-left: 10%;
+    word-spacing: 2px;
   }
-  
+  /*MAIN*/
   .foot li {
     text-align: center;
-    margin-left: 2%;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
+    padding: 30px 50px;
     font-family: sans-serif;
   }
-  
+  /*MAIN*/
   .author {
-    font-size: 12px;
-    color: #8b939b;
-    margin: 0;
-    padding: 0;
+    font-size: 1px;
+    color: #ffffff;
+    margin: 0px 10px;
+    padding: 0px;
     margin-left: 10px;
     text-align: center;
   }
-  
+  /*MAIN*/
   .author a {
     text-decoration: none;
-    color: #ff939b;
+    color: #f7f7f7;
     font-weight: 600;
   }
-  
+  /*MAIN*/
   a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(255, 255, 255);
   }
-  
+  /*MAIN*/
   a:hover {
-    color: #bbb;
+    color: rgb(128, 128, 128);
     transition-timing-function: ease-in;
     transition: 0.2s;
   }
-  
+  /*MAIN*/
   .extrapadding {
     visibility: hidden;
   }
   
-  @media all and (max-width: 768px) {
+    /*TABLET VERSION*/
+  @media all and (max-width: 944px) {
     .fourthcontent {
-      background: url(img/ME\ Venue\ 8.jpg) rgba(0, 0, 0, 0.6) no-repeat center center;
+      background: url(img/matakana-outside.jpg) rgba(0, 0, 0, 0.6) no-repeat center center;
       background-blend-mode: multiply;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
-      padding-top: 140px;
-      margin: 0px 0px 0px 0px;
+      padding-top: 40px;
+      margin: 120px 0px 0px 0px;
+    }
+    /*TABLET VERSION*/
+    .fourthtext {
+      padding: 20px 20px;
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      font-size: 20px;
+      text-align: center;
+      font-weight: lighter;
+    }
+    /*TABLET VERSION*/
+    .fourthtext p {
+      font-size: 18px;
+      font-family: Barlow;
+      text-transform: none;
+      word-spacing: 2px;
+      font-weight: lighter;
+    }
+    /*TABLET VERSION*/
+    .fifthcontent {
+      background: url(img/unplugged.jpeg) rgba(0, 0, 0, 0.6) no-repeat center center;
+      background-blend-mode: multiply;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      padding-top: 40px;
+      height: 567px;
+      margin: 0px 0px 50px 0px;
+      /*Change on  mobile */
+    }
+    /*TABLET VERSION*/
+    .fifthtext {
+      padding: 20px 60px;
+      position: relative;
+      z-index: 2;
+      /*Change on  mobile */
+      color: #fff;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      font-size: 20px;
+      text-align: center;
+      font-weight: lighter;
+    }
+    /*TABLET VERSION*/
+    .fifthtext p {
+      font-size: 18px;
+      /*Change on  mobile */
+      font-family: Barlow;
+      text-transform: none;
+      word-spacing: 2px;
+      font-weight: lighter;
+    }
+    /*TABLET VERSION*/
+    .foot {
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      color: #fff;
+      list-style: none;
+      margin: 0;
+      /*Change on  mobile */
+      padding: 0;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      text-align: center;
+    }
+    /*TABLET VERSION*/
+    .foot li {
+      text-align: center;
+      padding: 0px 0px 10px 0px;
+      /*Change on  mobile */
+      font-size: 5px;
+      font-weight: 500;
+      font-family: sans-serif;
+    }
+    /*TABLET VERSION*/
+    .author {
+      font-size: 10px;
+      color: #ffffff;
+      margin: 10px 5px;
+      padding: 0;
+      margin-left: 0px;
+      text-align: center;
+    }
+    /*TABLET VERSION*/
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    /*TABLET VERSION*/
+    a:hover {
+      color: rgb(128, 128, 128);
+      transition-timing-function: ease-in;
+      transition: 0.2s;
+    }
+    /*TABLET VERSION*/
+    .extrapadding {
+      visibility: hidden;
+    }
+  }
+    /*TABLET VERSION*/
+  @media all and (max-width: 944px) {
+    .fourthcontent {
+      background: url(img/matakana-outside.jpg) rgba(0, 0, 0, 0.6) no-repeat center center;
+      background-blend-mode: multiply;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      padding-top: 40px;
+      margin: 120px 0px 0px 0px;
     }
   
     .fourthtext {
@@ -823,21 +970,23 @@ header h5 {
     }
   
     .fifthcontent {
-      background: url(img/ME\ Venue\ 6.jpg) rgba(0, 0, 0, 0.6) no-repeat center center;
+      background: url(img/unplugged.jpeg) rgba(0, 0, 0, 0.6) no-repeat center center;
       background-blend-mode: multiply;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
-      padding-top: 80px;
-      height: 1000px;
-      margin: 0px 0px 0px 0px;
+      padding-top: 40px;
+      height: 567px;
+      margin: 0px 0px 50px 0px;
+      /*Change on  mobile */
     }
   
     .fifthtext {
       padding: 20px 60px;
       position: relative;
       z-index: 2;
+      /*Change on  mobile */
       color: #fff;
       text-transform: uppercase;
       font-family: sans-serif;
@@ -848,48 +997,46 @@ header h5 {
   
     .fifthtext p {
       font-size: 18px;
+      /*Change on  mobile */
       font-family: Barlow;
       text-transform: none;
       word-spacing: 2px;
       font-weight: lighter;
-      height: 100%;
-      width: 100;
     }
   
     .foot {
+      width: 100%;
       display: flex;
+      flex-direction: column-reverse;
       color: #fff;
       list-style: none;
       margin: 0;
+      /*Change on  mobile */
       padding: 0;
-      padding-top: 30px;
+      padding-top: 0px;
       padding-bottom: 0px;
       text-align: center;
-      margin-left: 10%;
+  
     }
   
     .foot li {
       text-align: center;
-      margin-left: 2%;
-      font-size: 12px;
+      padding: 0px 0px 10px 0px;
+      /*Change on  mobile */
+      font-size: 25px;
       font-weight: 500;
       font-family: sans-serif;
     }
   
     .author {
-      font-size: 12px;
-      color: #8b939b;
-      margin: 0;
+      font-size: 20px;
+      color: #ffffff;
+      margin: 10px 5px;
       padding: 0;
-      margin-left: 10px;
+      margin-left: 0px;
       text-align: center;
     }
   
-    .author a {
-      text-decoration: none;
-      color: #ff939b;
-      font-weight: 600;
-    }
   
     a {
       text-decoration: none;
@@ -897,7 +1044,7 @@ header h5 {
     }
   
     a:hover {
-      color: rgb(211, 10, 10);
+      color: rgb(128, 128, 128);
       transition-timing-function: ease-in;
       transition: 0.2s;
     }
@@ -906,4 +1053,3 @@ header h5 {
       visibility: hidden;
     }
   }
-  
