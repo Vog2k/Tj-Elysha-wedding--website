@@ -299,7 +299,7 @@ article {
   background-image: url("img/Web-00309.jpg");
   width: 100%;
   height: 100%;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -1005,7 +1005,7 @@ background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
 }
 
 .secondcontent {
-  background: url(img/Web-00868.jpg) no-repeat left center;
+  background: url(img/Web-00868Edit.jpg)no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1014,8 +1014,8 @@ background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
   position: relative;
   width: 100%;
   padding: 80px;
-
 }
+
 /*
 .secondtext {
   padding: 0px 0px 0px 0px;
@@ -1086,7 +1086,7 @@ background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
   font-family: Cambria, Cochin, Georgia;
   font-size: 25px;
   margin: auto;
-  width: 50%;
+  width: 80%;
   padding: 10px 80px;
   letter-spacing: 0.8px;
   text-align: center;
@@ -1170,7 +1170,7 @@ hr {
     animation: secondtext 5s;
   }
   .secondcontent{
-    background: url(img/beaut.jpg) no-repeat center cover;
+    background: url(img/Web-00868Edit.jpg) no-repeat center cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1182,7 +1182,7 @@ hr {
   }
   .secondtext {
     width: 100%;
-    height: 1000px;
+    height: 1800px;
     padding: 10px 0px 50px 0px;
     position: relative;
     z-index: 2;
@@ -1198,10 +1198,10 @@ hr {
     z-index: 2;
     color: rgb(0, 0, 0);
     font-family: Cambria, Cochin, Georgia;
-    font-size: 25px;
+    font-size: 15px;
     margin: auto;
-    width: 40%;
-    padding: 10px 80px;
+    width: 50%;
+    padding: 10px 60px;
     letter-spacing: 0.8px;
     text-align: center;
     animation: secondtext 5s;
@@ -1283,15 +1283,16 @@ hr {
     animation: secondtext 5s;
   }
   .secondcontent {
-    background: url(img/Web-00471.jpg) no-repeat left cover;
+    background: url(img/Web-00471.jpg) no-repeat cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-position: left;
     position: relative;
     width: 100%;
     margin: 0;
-    padding: 60px;
+    padding: 20px;
 
   }
 

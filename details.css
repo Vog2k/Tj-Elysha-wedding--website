@@ -971,9 +971,9 @@ html {
     
     
   }
-  
-  .secondcontent {
-    background: url(img/beaut.jpg) no-repeat left center;
+   /* BACKGROUND*/
+   .secondcontent {
+    background: white ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -982,44 +982,37 @@ html {
     position: relative;
     width: 100%;
     padding: 80px;
+    
   
+  } 
+
+  img.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    left: 60%;
+    width: 340px;
   }
-  /*
-  .secondtext {
-    padding: 0px 0px 0px 0px;
-    position: relative;
-    z-index: 2;
-    color: rgb(0, 0, 0);
-    font-family: Piefont;
-    font-size: 70px;
-    text-shadow:0 4px 30px rgba(255, 255, 255, 0.638);
-    text-align: center;
-    margin: 0px;
-    animation: secondtext 5s;
-  }*/
+  .gridTimeline{
+    width: 50%;
+    
+  }
   .secondtext {
     padding: 0px 0px 0px 0px;
     position: relative;
     z-index: 2;
     color: rgb(0, 0, 0);
     font-family: 'Sunnyletter', sans-serif;
-    font-size: 70px;
+    font-size: 30px;
     text-shadow:0 4px 30px rgba(255, 255, 255, 0.638);
     text-align: center;
     margin: 0px;
     animation: secondtext 5s;
+    width: 100%;
   }
-  .date{
-    padding: 0px 0px 0px 0px;
-    position: relative;
-    z-index: 2;
-    color: rgb(0, 0, 0);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 70px;
-    text-shadow:0 4px 30px rgba(255, 255, 255, 0.638);
-    text-align: center;
-    margin: 0px;
-    animation: secondtext 5s;
+  .gridForTimeline{
+    display: grid;
+    grid-template-columns: 80px 200px auto 40px;
   }
   
   @keyframes secondtext {
@@ -1047,26 +1040,7 @@ html {
     100% { opacity: 1; }
   }
     /* MAIN */
-  .welcome {
-    position: relative;
-    z-index: 2;
-    color: rgb(0, 0, 0);
-    font-family: Cambria, Cochin, Georgia;
-    font-size: 25px;
-    margin: auto;
-    width: 50%;
-    padding: 10px 80px;
-    letter-spacing: 0.8px;
-    text-align: center;
-    animation: secondtext 5s;
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.555);
-    /*background: rgba(0, 0, 0, 0.548);*/
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8.6px);
-    -webkit-backdrop-filter: blur(4.6px);
-  }
+
   
   hr {
     margin: 20px;
@@ -1078,88 +1052,11 @@ html {
   
   }
   @media all and (max-width: 1280px) {
-    .welcome {
-      position: relative;
-      z-index: 2;
-      color: rgb(0, 0, 0);
-      font-family: Cambria, Cochin, Georgia;
-      font-size: 25px;
-      margin: auto;
-      width: 100%;
-      padding: 25px 10px;
-      letter-spacing: 0.8px;
-      text-align: center;
-      animation: secondtext 5s;
-      /* From https://css.glass */
-      background: rgba(255, 255, 255, 0.555);
-      /*background: rgba(0, 0, 0, 0.548);*/
-      border-radius: 16px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(8.6px);
-      -webkit-backdrop-filter: blur(4.6px);
-    }
-      .date{
-      padding: 0px 0px 0px 0px;
-      position: relative;
-      z-index: 2;
-      color: rgb(0, 0, 0);
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 50px;
-      text-shadow:0 4px 30px rgba(255, 255, 255, 0.638);
-      text-align: center;
-      margin: 0px;
-      animation: secondtext 5s;
-    }
+
   }
   
   @media all and (max-width: 768px) {
-    .secondcontent {
-      background: url(img/beaut.jpg) no-repeat center cover;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      position: relative;
-      width: 100%;
-      margin: 0;
-      padding: 60px;
-    }
-    .secondtext {
-      width: 100%;
-      height: 1000px;
-      padding: 10px 0px 50px 0px;
-      position: relative;
-      z-index: 2;
-      color: rgb(0, 0, 0);
-      font-family: 'Sunnyletter', sans-serif;
-      font-size: 70px;
-      text-align: center;
-      margin: 0px;
-  
-    }
-    .welcome {
-      position: relative;
-      z-index: 2;
-      color: rgb(0, 0, 0);
-      font-family: Cambria, Cochin, Georgia;
-      font-size: 25px;
-      margin: auto;
-      width: 40%;
-      padding: 10px 80px;
-      letter-spacing: 0.8px;
-      text-align: center;
-      animation: secondtext 5s;
-      /* From https://css.glass */
-      background: rgba(255, 255, 255, 0.555);
-      /*background: rgba(0, 0, 0, 0.548);*/
-      border-radius: 16px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(8.6px);
-      -webkit-backdrop-filter: blur(4.6px);
-      
-      
-    
-    }
+
   
     hr {
       margin: 20px;
@@ -1198,51 +1095,7 @@ html {
     }
   }
   @media all and (max-width: 768px) {
-    .secondcontent {
-      background: url(img/beaut.jpg) no-repeat center cover;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      position: relative;
-      width: 100%;
-      margin: 0;
-      padding: 60px;
-  
-    }
-    .secondtext {
-      width: 100%;
-      height: 700px;
-      padding: 10px 0px 50px 0px;
-      position: relative;
-      z-index: 2;
-      color: rgb(0, 0, 0);
-      font-family: 'Sunnyletter', sans-serif;
-      font-size: 70px;
-      text-align: center;
-      margin: 0px;
-    }
-    .welcome {
-  
-      position: relative;
-      z-index: 2;
-      color: rgb(0, 0, 0);
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-size: 20px;
-      margin: auto;
-      width: 100%;
-      padding: 10px;
-      letter-spacing: 0.5px;
-      text-align: center;
-      animation: secondtext 5s;
-      /* From https://css.glass */
-      background: rgba(255, 255, 255, 0.555);
-      border-radius: 16px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(5.6px);
-      -webkit-backdrop-filter: blur(4.6px);
-      border: 1px solid rgba(255, 255, 255, 0.35);
-    }
+
     hr {
       margin: 20px;
       width: 40%;
@@ -1276,50 +1129,7 @@ html {
     }
   }
   @media all and (max-width: 468px) {
-    .secondcontent {
-      background: url(img/beaut.jpg) no-repeat center cover;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      position: relative;
-      width: 100%;
-      margin: 0;
-      padding: 60px;
-  
-    }
-    .secondtext {
-      width: 100%;
-      height: 1000px;
-      padding: 10px 0px 50px 0px;
-      position: relative;
-      z-index: 2;
-      color: rgb(0, 0, 0);
-      font-family: 'Sunnyletter', sans-serif;
-      font-size: 70px;
-      text-align: center;
-      margin: 0px;
-    }
-    .welcome {
-      position: relative;
-      z-index: 2;
-      color: rgb(0, 0, 0);
-      font-family: Cambria, Cochin, Georgia;
-      font-size: 20px;
-      margin: auto;
-      width: 100%;
-      padding: 5px 10px;
-      letter-spacing: 0.8px;
-      text-align: center;
-      animation: secondtext 5s;
-      /* From https://css.glass */
-      background: rgba(255, 255, 255, 0.555);
-      /*background: rgba(0, 0, 0, 0.548);*/
-      border-radius: 16px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(8.6px);
-      -webkit-backdrop-filter: blur(4.6px);
-    }
+
     hr {
       margin: 20px;
       width: 40%;
@@ -1393,20 +1203,7 @@ html {
     padding: 25px 0px;
   }
   /*MAIN*/
-  .video-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-  }
-  /*MAIN*/
-  .video-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-  }
+
   /*TABLET VERSION*/
   @media all and (max-width: 768px) {
     .thirdtext {
@@ -1666,6 +1463,13 @@ html {
       text-transform: none;
       word-spacing: 2px;
       font-weight: lighter;
+    }
+    .black-box{
+      /*Changes black box width and height*/
+      margin: 0px 0px 0px 0px;
+      padding: 50px;
+      background: #000000de;
+  
     }
     /*TABLET VERSION*/
     .foot {
