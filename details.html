@@ -242,16 +242,66 @@
 
   <div class="secondcontent">
     <div class="secondtext">
-      <h2>Sticky Image: Scroll Down to See the Effect</h2>
-      <p>The image will "stick" to the screen when you reach its scroll position.</p>
-      <img class="sticky" src="img/Wedding+Agenda.jpg" alt="">
-      <div class="gridTimeline">
-      <h2>Scroll Down</h2>
-      <p>Some example text..</p>
-      <p><b>Scroll back up again to "remove" the sticky position.</b></p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipit dictum interdum, nisi lorem vitae sceleri Lorem ipsum dolor sit
-        amet, consectetur adipit dictum interdum, nisi lorem vitae sceleri</p>
-      </div>
+      <div class="site-main">
+
+
+            <div class="container-1">
+              <div class="row-1">
+                <div class="col-1">
+                  <div class="toc">
+                    <h2></h2>
+                    <p>To ensure a smooth and enjoyable celebration, we kindly request our guests to arrive on time at 2:30pm. Your punctuality will help us maintain the planned schedule and create a seamless experience for everyone. Thank you for understanding! <br> <br></p>
+                    <h3>2:30pm - Arrival Time <br> <br>         
+                      2:45pm - Ceremony <br> <br>
+                      3:45pm - Drinks and Mingling  <br> <br>
+                      6:00pm - Reception <br> <br>
+                      6:30pm - Dinner Served<br> <br>
+                      7:30pm - Cake and Dessert<br> <br>
+                      8:30pm - The Party Begins<br> <br>
+                      11:30pm - End of the Evening   <br> <br></h3>
+
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="toc-sidebar">
+                    <button class="toggle-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" fill="#134859" />
+                      </svg>
+                    </button>
+                    <h2>Timely Arrival is Appreciated!</h2>
+                    <img src="img/Wedding+Agenda.jpg" alt="">
+                    <ul class="list-toc">
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+<script>let tocs = document.querySelectorAll(".toc h2");
+let listToc = document.querySelector(".list-toc");
+for (toc of tocs) {
+  let str = toc.textContent;
+  let idValue = str.replace(/\s/g, "-");
+  toc.setAttribute("id", idValue);
+  listToc.innerHTML += `<li><a  href="#${idValue}">${str}</a></li>`;
+}
+
+let listTocTarget = document.querySelectorAll(".list-toc a");
+listTocTarget.forEach((el) => {
+  el.addEventListener("click", function () {
+    for (i = 0; i < listTocTarget.length; i++) {
+      listTocTarget[i].parentNode.classList.remove("active");
+    }
+    this.parentNode.classList.add("active");
+  });
+});
+
+let toggleButton = document.querySelector(".toggle-button");
+let tocSidebar = document.querySelector(".toc-sidebar");
+toggleButton.addEventListener("click", () => {
+  tocSidebar.classList.toggle("active");
+});</script>
     </div>
   </div>
   <div class="fifthcontent ">
