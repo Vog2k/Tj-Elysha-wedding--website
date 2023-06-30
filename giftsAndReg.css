@@ -855,7 +855,7 @@ a:hover {
   .foot {
     width: 100%;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     color: #fff;
     list-style: none;
     margin: 0;

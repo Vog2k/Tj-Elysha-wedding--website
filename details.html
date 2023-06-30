@@ -249,16 +249,54 @@
               <div class="row-1">
                 <div class="col-1">
                   <div class="toc">
-                    <h2></h2>
+                    <h2>Timely Arrival is Appreciated!</h2>
                     <p>To ensure a smooth and enjoyable celebration, we kindly request our guests to arrive on time at 2:30pm. Your punctuality will help us maintain the planned schedule and create a seamless experience for everyone. Thank you for understanding! <br> <br></p>
-                    <h3>2:30pm - Arrival Time <br> <br>         
-                      2:45pm - Ceremony <br> <br>
-                      3:45pm - Drinks and Mingling  <br> <br>
-                      6:00pm - Reception <br> <br>
-                      6:30pm - Dinner Served<br> <br>
-                      7:30pm - Cake and Dessert<br> <br>
-                      8:30pm - The Party Begins<br> <br>
-                      11:30pm - End of the Evening   <br> <br></h3>
+                      
+                    <div class="w3-container">
+                      <h2>Slideshow Indicators</h2>
+                      <p>Using images to indicate how many slides there are in the slideshow, and highlight the image the user is currently viewing.</p>
+                    </div>
+                    
+                    <div class="w3-content" style="max-width:1200px">
+                      <img class="mySlides" src="img/matakana 1.jpg" style="width:100%;display:none">
+                      <img class="mySlides" src="img/matakana-gate.PNG" style="width:100%">
+                      <img class="mySlides" src="img/matakana-outside.jpg" style="width:100%;display:none">
+                    
+                      <div class="w3-row-padding w3-section">
+                        <div class="w3-col s4">
+                          <img class="demo w3-opacity w3-hover-opacity-off" src="img/matakana 1.jpg" style="width:10%;cursor:pointer" onclick="currentDiv(1)">
+                        </div>
+                        <div class="w3-col s4">
+                          <img class="demo w3-opacity w3-hover-opacity-off" src="img/matakana-gate.PNG" style="width:10%;cursor:pointer" onclick="currentDiv(2)">
+                        </div>
+                        <div class="w3-col s4">
+                          <img class="demo w3-opacity w3-hover-opacity-off" src="img/matakana-outside.jpg" style="width:10%;cursor:pointer" onclick="currentDiv(3)">
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <script>
+                    function currentDiv(n) {
+                      showDivs(slideIndex = n);
+                    }
+                    
+                    function showDivs(n) {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("demo");
+                      if (n > x.length) {slideIndex = 1}
+                      if (n < 1) {slideIndex = x.length}
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                      }
+                      x[slideIndex-1].style.display = "block";
+                      dots[slideIndex-1].className += " w3-opacity-off";
+                    }
+                    </script>
+                    
 
                   </div>
                 </div>
@@ -269,8 +307,11 @@
                         <path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" fill="#134859" />
                       </svg>
                     </button>
-                    <h2>Timely Arrival is Appreciated!</h2>
-                    <img src="img/Wedding+Agenda.jpg" alt="">
+
+                    <h2 class="stickyh2"><img src="img/Wedding+Agenda.jpg" alt="">
+                    <div class="h2Img">
+
+                  </div>
                     <ul class="list-toc">
                     </ul>
                   </div>
@@ -278,7 +319,7 @@
               </div>
             </div>
 
-<script>let tocs = document.querySelectorAll(".toc h2");
+<script>let tocs = document.querySelectorAll(".toc h2Img");
 let listToc = document.querySelector(".list-toc");
 for (toc of tocs) {
   let str = toc.textContent;
@@ -302,8 +343,10 @@ let tocSidebar = document.querySelector(".toc-sidebar");
 toggleButton.addEventListener("click", () => {
   tocSidebar.classList.toggle("active");
 });</script>
-    </div>
+      </div>
+    </div>    
   </div>
+</div>
   <div class="fifthcontent ">
     <div class="fifthtext">
 
@@ -342,13 +385,14 @@ toggleButton.addEventListener("click", () => {
     <div class="fourthcontent">
       <div class="fourthtext">
 
-        <h1>PLEASE RSVP BEFORE<br> October 8TH 2023</h1><br>
-        <p class="black-box">By RSVPing before 8th October, you will be helping us to ensure <br> that the event runs
-          smoothly
-          and that everyone has an enjoyable experience. To RSVP, please click the button below.<br><br>
+        Food: <br><br>
 
-          <br> We look forward to seeing you at the event and thank you <br> in advance for your prompt response.
-        </p><br>
+        We will be serving some very light nibbles after the ceremony and will be serving dinner later in the evening at 6:30pm, for this reason, we ask that you please eat lunch before arriving. Your comfort and enjoyment throughout the day are important to us, and having a satisfying meal beforehand will help make the celebration even more memorable.
+        <br><br>
+        Drinks: <br><br>
+        
+        We will have a limited bar tab open at the reception, if you think you would like more than a few drinks we kindly ask that you bring eftpos to purchase more drinks after the tab has been used. As the venue is a winery there is a strict policy of not supplying your own drinks, we kindly ask that you respect this policy and do not bring any of your own drinks. We also kindly ask that everyone drink responsibly and make plans to carpool with sober drivers. 
+        
 
 
       </div>
