@@ -1504,9 +1504,9 @@ html {
   }
 .black-box{
     /*Changes black box width and height*/
-    margin: 0px 0px 0px 550px;
+    margin: 0px 0px 0px 0px;
     padding: 50px;
-    background: #000000de;
+    background: #000000;
 
   }
 
@@ -1639,7 +1639,7 @@ html {
       /*Changes black box width and height*/
       margin: 0px 0px 0px 0px;
       padding: 50px;
-      background: #000000de;
+      background: #000000;
   
     }
     .trademark {
