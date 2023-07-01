@@ -956,67 +956,193 @@
     font-weight: lighter;
   }
   
+  footer {
+    display: flex;
+    color: #0a0a0a;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    text-align: center;
+
+    background-color: #000000;
+  }
   .foot {
     display: flex;
     color: #fff;
     list-style: none;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    padding-top: 30px;
-    padding-bottom: 0px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    padding-bottom: 50px;
     text-align: center;
-    margin-left: 10%;
+    word-spacing: 2px;
   }
-  
+  /*MAIN*/
   .foot li {
     text-align: center;
-    margin-left: 2%;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
+    padding: 30px 50px;
     font-family: sans-serif;
   }
-  
+  /*MAIN*/
   .author {
-    font-size: 12px;
-    color: #8b939b;
-    margin: 0;
-    padding: 0;
+    font-size: 1px;
+    color: #ffffff;
+    margin: 0px 10px;
+    padding: 0px;
     margin-left: 10px;
     text-align: center;
   }
-  
+  /*MAIN*/
   .author a {
     text-decoration: none;
-    color: #ff939b;
+    color: #f7f7f7;
     font-weight: 600;
   }
-  
+  /*MAIN*/
   a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
-  
+  /*MAIN*/
   a:hover {
-    color: rgb(255, 66, 66);
+    color: rgb(128, 128, 128);
     transition-timing-function: ease-in;
     transition: 0.2s;
   }
-  
+  /*MAIN*/
   .extrapadding {
     visibility: hidden;
   }
   
-  @media all and (max-width: 768px) {
+    /*TABLET VERSION*/
+  @media all and (max-width: 944px) {
     .fourthcontent {
-      background: url(img/Reception.jpeg) rgba(0, 0, 0, 0.6) no-repeat center center;
+      background: url(img/matakana-outside.jpg) rgba(0, 0, 0, 0.6) no-repeat center center;
       background-blend-mode: multiply;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
-      padding-top: 140px;
-      margin: 80px 0px 0px 0px;
+      padding-top: 40px;
+      margin: 120px 0px 0px 0px;
+    }
+    /*TABLET VERSION*/
+    .fourthtext {
+      padding: 20px 20px;
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      font-size: 20px;
+      text-align: center;
+      font-weight: lighter;
+    }
+    /*TABLET VERSION*/
+    .fourthtext p {
+      font-size: 18px;
+      font-family: Barlow;
+      text-transform: none;
+      word-spacing: 2px;
+      font-weight: lighter;
+    }
+    /*TABLET VERSION*/
+    .fifthcontent {
+      background: url(img/unplugged.jpeg) rgba(0, 0, 0, 0.6) no-repeat center center;
+      background-blend-mode: multiply;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      padding-top: 40px;
+      height: 567px;
+      margin: 0px 0px 50px 0px;
+      /*Change on  mobile */
+    }
+    /*TABLET VERSION*/
+    .fifthtext {
+      padding: 20px 60px;
+      position: relative;
+      z-index: 2;
+      /*Change on  mobile */
+      color: #fff;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      font-size: 20px;
+      text-align: center;
+      font-weight: lighter;
+    }
+    /*TABLET VERSION*/
+    .fifthtext p {
+      font-size: 18px;
+      /*Change on  mobile */
+      font-family: Barlow;
+      text-transform: none;
+      word-spacing: 2px;
+      font-weight: lighter;
+    }
+    /*TABLET VERSION*/
+    .foot {
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      color: #fff;
+      list-style: none;
+      margin: 0;
+      /*Change on  mobile */
+      padding: 0;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      text-align: center;
+    }
+    /*TABLET VERSION*/
+    .foot li {
+      text-align: center;
+      padding: 0px 0px 10px 0px;
+      /*Change on  mobile */
+      font-size: 5px;
+      font-weight: 500;
+      font-family: sans-serif;
+    }
+    /*TABLET VERSION*/
+    .author {
+      font-size: 10px;
+      color: #ffffff;
+      margin: 10px 5px;
+      padding: 0;
+      margin-left: 0px;
+      text-align: center;
+    }
+    /*TABLET VERSION*/
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    /*TABLET VERSION*/
+    a:hover {
+      color: rgb(128, 128, 128);
+      transition-timing-function: ease-in;
+      transition: 0.2s;
+    }
+    /*TABLET VERSION*/
+    .extrapadding {
+      visibility: hidden;
+    }
+  }
+    /*TABLET VERSION*/
+  @media all and (max-width: 944px) {
+    .fourthcontent {
+      background: url(img/matakana-outside.jpg) rgba(0, 0, 0, 0.6) no-repeat center center;
+      background-blend-mode: multiply;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      padding-top: 40px;
+      margin: 120px 0px 0px 0px;
     }
   
     .fourthtext {
@@ -1047,14 +1173,16 @@
       -o-background-size: cover;
       background-size: cover;
       padding-top: 40px;
-      height: 800px;
-      margin: 0px 0px 80px 0px;
+      height: 567px;
+      margin: 0px 0px 50px 0px;
+      /*Change on  mobile */
     }
   
     .fifthtext {
       padding: 20px 60px;
       position: relative;
       z-index: 2;
+      /*Change on  mobile */
       color: #fff;
       text-transform: uppercase;
       font-family: sans-serif;
@@ -1065,6 +1193,7 @@
   
     .fifthtext p {
       font-size: 18px;
+      /*Change on  mobile */
       font-family: Barlow;
       text-transform: none;
       word-spacing: 2px;
@@ -1072,39 +1201,38 @@
     }
   
     .foot {
+      width: 100%;
       display: flex;
+      flex-direction: column;
       color: #fff;
       list-style: none;
       margin: 0;
+      /*Change on  mobile */
       padding: 0;
-      padding-top: 30px;
+      padding-top: 50px;
       padding-bottom: 0px;
       text-align: center;
-      margin-left: 10%;
+  
     }
   
     .foot li {
       text-align: center;
-      margin-left: 2%;
-      font-size: 12px;
+      padding: 0px 0px 10px 0px;
+      /*Change on  mobile */
+      font-size: 25px;
       font-weight: 500;
       font-family: sans-serif;
     }
   
     .author {
-      font-size: 12px;
-      color: #8b939b;
-      margin: 0;
+      font-size: 20px;
+      color: #ffffff;
+      margin: 10px 5px;
       padding: 0;
-      margin-left: 10px;
+      margin-left: 0px;
       text-align: center;
     }
   
-    .author a {
-      text-decoration: none;
-      color: #ff939b;
-      font-weight: 600;
-    }
   
     a {
       text-decoration: none;
@@ -1112,7 +1240,7 @@
     }
   
     a:hover {
-      color: rgb(211, 10, 10);
+      color: rgb(128, 128, 128);
       transition-timing-function: ease-in;
       transition: 0.2s;
     }
@@ -1120,4 +1248,13 @@
     .extrapadding {
       visibility: hidden;
     }
+    .trademark {
+      width: 100%;
+      height: 100%;
+    }
+    .trademark img{
+      width: 50%;
+      height: 50%;
+    }
+  
   }

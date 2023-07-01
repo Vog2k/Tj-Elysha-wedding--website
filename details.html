@@ -8,7 +8,7 @@
   <title>Elysha & Timothy Leatau The Details</title>
   <link rel="stylesheet" href="details.css">
   <script src="index.js"></script>
-  <link rel="shortcut icon" href="/img/icons8-romance-32.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
 </head>
 
 </head>
@@ -242,195 +242,139 @@
 
   <div class="secondcontent">
     <div class="secondtext">
-      <div class="site-main">
+
+      <h2>Timely Arrival is Appreciated!</h2>
+      <p>To ensure a smooth and enjoyable celebration, we kindly request our guests to arrive on time at 2:30pm. Your
+        punctuality will help us maintain the planned schedule and create a seamless experience for everyone. Thank you
+        for understanding! <br> <br></p>
 
 
-            <div class="container-1">
-              <div class="row-1">
-                <div class="col-1">
-                  <div class="toc">
-                    <h2>Timely Arrival is Appreciated!</h2>
-                    <p>To ensure a smooth and enjoyable celebration, we kindly request our guests to arrive on time at 2:30pm. Your punctuality will help us maintain the planned schedule and create a seamless experience for everyone. Thank you for understanding! <br> <br></p>
-                      
-                    <div class="w3-container">
-                      <h2>Slideshow Indicators</h2>
-                      <p>Using images to indicate how many slides there are in the slideshow, and highlight the image the user is currently viewing.</p>
-                    </div>
-                    
-                    <div class="w3-content" style="max-width:1200px">
-                      <img class="mySlides" src="img/matakana 1.jpg" style="width:100%;display:none">
-                      <img class="mySlides" src="img/matakana-gate.PNG" style="width:100%">
-                      <img class="mySlides" src="img/matakana-outside.jpg" style="width:100%;display:none">
-                    
-                      <div class="w3-row-padding w3-section">
-                        <div class="w3-col s4">
-                          <img class="demo w3-opacity w3-hover-opacity-off" src="img/matakana 1.jpg" style="width:10%;cursor:pointer" onclick="currentDiv(1)">
-                        </div>
-                        <div class="w3-col s4">
-                          <img class="demo w3-opacity w3-hover-opacity-off" src="img/matakana-gate.PNG" style="width:10%;cursor:pointer" onclick="currentDiv(2)">
-                        </div>
-                        <div class="w3-col s4">
-                          <img class="demo w3-opacity w3-hover-opacity-off" src="img/matakana-outside.jpg" style="width:10%;cursor:pointer" onclick="currentDiv(3)">
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <script>
-                    function currentDiv(n) {
-                      showDivs(slideIndex = n);
-                    }
-                    
-                    function showDivs(n) {
-                      var i;
-                      var x = document.getElementsByClassName("mySlides");
-                      var dots = document.getElementsByClassName("demo");
-                      if (n > x.length) {slideIndex = 1}
-                      if (n < 1) {slideIndex = x.length}
-                      for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                      }
-                      for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-                      }
-                      x[slideIndex-1].style.display = "block";
-                      dots[slideIndex-1].className += " w3-opacity-off";
-                    }
-                    </script>
-                    
-
-                  </div>
-                </div>
-                <div class="col-1">
-                  <div class="toc-sidebar">
-                    <button class="toggle-button">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                        <path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" fill="#134859" />
-                      </svg>
-                    </button>
-
-                    <h2 class="stickyh2"><img src="img/Wedding+Agenda.jpg" alt="">
-                    <div class="h2Img">
-
-                  </div>
-                    <ul class="list-toc">
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-<script>let tocs = document.querySelectorAll(".toc h2Img");
-let listToc = document.querySelector(".list-toc");
-for (toc of tocs) {
-  let str = toc.textContent;
-  let idValue = str.replace(/\s/g, "-");
-  toc.setAttribute("id", idValue);
-  listToc.innerHTML += `<li><a  href="#${idValue}">${str}</a></li>`;
-}
-
-let listTocTarget = document.querySelectorAll(".list-toc a");
-listTocTarget.forEach((el) => {
-  el.addEventListener("click", function () {
-    for (i = 0; i < listTocTarget.length; i++) {
-      listTocTarget[i].parentNode.classList.remove("active");
-    }
-    this.parentNode.classList.add("active");
-  });
-});
-
-let toggleButton = document.querySelector(".toggle-button");
-let tocSidebar = document.querySelector(".toc-sidebar");
-toggleButton.addEventListener("click", () => {
-  tocSidebar.classList.toggle("active");
-});</script>
-      </div>
-    </div>    
-  </div>
-</div>
-  <div class="fifthcontent ">
-    <div class="fifthtext">
-
-      <h1><br> Unplugged ceremony</h1> <br>
-      <p>We kindly ask you to embrace our unplugged ceremony by refraining from using electronic devices. Professional photos will be shared, so you can fully enjoy the experience, be present with us and don’t have to worry about the moment being captured. As soon as the ceremony is completed you are more than welcome to take as many photos as you would like with friends and family throughout the evening. 
-        Thank you for honoring our request!
-        </p>
-      <br>
 
 
+        <div class="row">
+          <div class="column">
+            <img src="img/Wedding+Agenda.jpg" alt="Mountains" style="width:100%">
+          </div>
+          <div class="column1">
+            <img src="img/matakana 1.jpg" alt="Mountains" style="width:100%">
+          </div>
+        </div>
+        
 
     </div>
   </div>
+
   <div class="thirdcontent">
     <div class="thirdtext">
 
-      <h1>Dress code</h1>
-      <h2></h2>
-
-
-      <p>We wanted to provide some guidance regarding the dress code, however, please feel free to wear whatever will make you most comfortable and please do not feel that you have to go out and buy something new to wear. <br><br>
-
+      <h2>Dress Code</h2>
+      <p>We wanted to provide some guidance regarding the dress code, however, please feel free to wear whatever will
+        make you most comfortable and please do not feel that you have to go out and buy something new to wear. <br><br>
         Our wedding will have a semi-formal dress code, <br><br>
-        
-        For the Guys, semi-formal attire typically includes dress pants paired with a long-sleeve dress shirt, and dress shoes. While suit jackets, ties, or even a full tuxedo is not required, you are more than welcome to wear them if you would like. Feel free to go all out expressing your personal style.<br><br>
-        For the Ladies, semi-formal attire typically includes the following options: Cocktail dress (mid-length or full-length), dressy pantsuits, evening dress, dressy top with a formal skirt or tailored trousers. Again feel free to go all out and dress up as much as you would like, however we want everyone to be comfortable so wear whatever makes you feel most comfortable and camera ready. <br><br>
-        One important thing to keep in mind: our ceremony will take place outside on grass, and you will need to walk on gravel to reach the reception hall. We kindly ask you to consider your shoe selection accordingly, for the ladies, flat, low or thick heeled shoes are recommended. <br><br>
-        The colour scheme for our wedding is black and white, you can wear whatever colour you would like, no need to shy away from wearing black, in fact we encourage it! However, it goes without saying, ladies don’t wear a white dress, Elysha already called dibs.  <br><br>
-        We are looking forward to seeing everyone looking amazing as we know you all will! 
-        </p>
+        For the Guys, semi-formal attire typically includes dress pants paired with a long-sleeve dress shirt, and dress
+        shoes. While suit jackets, ties, or even a full tuxedo is not required, you are more than welcome to wear them
+        if you would like. Feel free to go all out expressing your personal style.<br><br>
+        For the Ladies, semi-formal attire typically includes the following options: Cocktail dress (mid-length or
+        full-length), dressy pantsuits, evening dress, dressy top with a formal skirt or tailored trousers. Again feel
+        free to go all out and dress up as much as you would like, however we want everyone to be comfortable so wear
+        whatever makes you feel most comfortable and camera ready. <br><br>
+        One important thing to keep in mind: our ceremony will take place outside on grass, and you will need to walk on
+        gravel to reach the reception hall. We kindly ask you to consider your shoe selection accordingly, for the
+        ladies, flat, low or thick heeled shoes are recommended. <br><br>
+        The colour scheme for our wedding is black and white, you can wear whatever colour you would like, no need to
+        shy away from wearing black, in fact we encourage it! However, it goes without saying, ladies don’t wear a white
+        dress, Elysha already called dibs. <br><br>
+        We are looking forward to seeing everyone looking amazing as we know you all will!
 
+      </p>
+      <hr>
+      <h2>Kids</h2>
 
+      <p>Your kids are more than welcome to attend our wedding and we
+        would love to see them there, if however you would rather find
+        a babysitter and have a child-free evening then we would love
+        that too. <br><br>
 
+        If your kids are attending the wedding we ask that you keep
+        your eyes on them at all times and keep them close. Around the
+        wedding venue there are some ponds, steep banks and forestry
+        areas where kids could easily get injured.<br><br>
 
+        We also understand that children, with their boundless energy
+        and unpredictable moods, may occasionally become overwhelmed
+        or restless. If your little ones happen to start crying or
+        become disruptive during the ceremony or reception, please
+        know that we completely understand. We want everyone, including
+        parents, to fully enjoy the day without unnecessary stress.
+        Therefore, we kindly request that if such a situation arises,
+        you feel free to take a moment outside the main event area to
+        attend to your child's needs. We greatly appreciate your
+        understanding and cooperation on this matter.
+      </p>
+      <hr>
+
+      <h2>Food </h2>
+      <p>
+        We will be serving some very light nibbles after the ceremony and
+        will be serving dinner later in the evening at 6:30pm, for this
+        reason, we ask that you please eat lunch before arriving. Your
+        comfort and enjoyment throughout the day are important to us, and
+        having a satisfying meal beforehand will help make the celebration
+        even more memorable.</p>
+      <hr>
+      <h2>Drinks</h2>
+
+      <p>We will have a limited bar tab open at the reception, if you
+        think you would like more than a few drinks we kindly ask that
+        you bring eftpos to purchase more drinks after the tab has
+        been used. As the venue is a winery there is a strict policy
+        of not supplying your own drinks, we kindly ask that you
+        respect this policy and do not bring any of your own drinks.
+        We also kindly ask that everyone drink responsibly and make
+        plans to carpool with sober drivers. </p>
+      <hr>
+      <h2>Plus ones </h2>
+      <p>Our wedding venue has a limited patron capacity,
+        this has meant that we have had to be intentional about
+        our guest list. In order to ensure an intimate gathering
+        with our closest family and friends, we kindly request
+        that the invitation is extended only to those whose names
+        are explicitly mentioned when we distributed the
+        invitations. We hope you understand our decision to not
+        allow plus ones and hope that you will attend and enjoy
+        the evening with those invited.
+      </p>
+      <hr>
+      <h2> Smoking</h2>
+      <p>
+        Our wedding venue (in particular the reception hall) has a
+        high fire risk, for this reason, and for the respect of
+        those who do not smoke, we ask that you refrain from
+        smoking or vaping as much as possible on our wedding day.
+        If you do need to smoke, we kindly ask that you do so on
+        the far side of the gravel carpark, at least 100 meters
+        from the building and other wedding guests, we thank you
+        for your understanding surrounding this matter.
+      </p>
     </div>
-    <div class="fourthcontent">
-      <div class="fourthtext">
-
-        Food: <br><br>
-
-        We will be serving some very light nibbles after the ceremony and will be serving dinner later in the evening at 6:30pm, for this reason, we ask that you please eat lunch before arriving. Your comfort and enjoyment throughout the day are important to us, and having a satisfying meal beforehand will help make the celebration even more memorable.
-        <br><br>
-        Drinks: <br><br>
-        
-        We will have a limited bar tab open at the reception, if you think you would like more than a few drinks we kindly ask that you bring eftpos to purchase more drinks after the tab has been used. As the venue is a winery there is a strict policy of not supplying your own drinks, we kindly ask that you respect this policy and do not bring any of your own drinks. We also kindly ask that everyone drink responsibly and make plans to carpool with sober drivers. 
-        
+  </div>
 
 
+  <footer>
+    <ul class="foot">
+      <li class="author">Wedding website designed in <i class="fa fa-copyright" aria-hidden="true"></i> 2023 by <a
+          href="https://vog2k.github.io/index.html" target="_blank">Timothy.L</a></li>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="giftsAndReg.html">REGISTRY</a></li>
+      <li><a href="gettingThere.html">LOCATION</a></li>
+      <li><a href="RSVP.html">RSVP</a></li>
+      <li><a href="OurStory.html">OUR STORY</a></li>
+      <div class="trademark">
+        <img src="img/favicon2.png" alt="">
       </div>
-      <div class="thirdcontent">
-        <div class="thirdtext">
 
-          <h1>Dress code</h1>
-          <h2></h2>
-
-
-          <p>Matakana Estate is situated in the heart of Matakana, a hidden gem of a wine
-            region, less than an hour’s drive north of central Auckland. Matakana Coast is
-            a must-visit destination for a holiday in New Zealand, with fine wines,
-            local foods, busy markets and stunning beaches. <br><br>
-
-            Matakana Estate is the largest winery in the region, spanning 35
-            hectares of land.</p>
-
-          <a href="gettingThere.html">
-            <button class="custom-btn btn-5"><span>Read More</span></button></a>
-          <h1 class="extrapadding"> <br></h1>
-
-
-        </div>
-
-
-        <footer>
-          <ul class="foot">
-            <li class="author">Wedding website designed in <i class="fa fa-copyright" aria-hidden="true"></i> 2023 by <a
-                href="https://vog2k.github.io/index.html" target="_blank">Timothy.L</a></li>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="giftsAndReg.html">REGISTRY</a></li>
-            <li><a href="gettingThere.html">LOCATION</a></li>
-            <li><a href="RSVP.html">RSVP</a></li>
-            <li><a href="OurStory.html">OUR STORY</a></li>
-
-          </ul>
-        </footer>
+    </ul>
+  </footer>
 </body>
 
 </html>
