@@ -8,8 +8,8 @@ const dislike = document.querySelector('#dislike');
 
 // constants
 const urls = [
-  'img/fb.jpeg',
   'img/FirstDate.jpeg',
+  'img/',
   'img/FirstXmas.jpeg',
   'img/FirstXmas1.jpeg',
   'img/halloweeen.jpeg',
