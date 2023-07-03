@@ -266,23 +266,14 @@
   <link href="https://fonts.cdnfonts.com/css/sunnyletter" rel="stylesheet">
  
 
-          
-          <!-- Responsive Contact Page with Dark Mode and Form Validation (vanilla JS).
-
-*Designed & built for desktop and tablets with viewport width >= 720px and in landscape orientation.  -->
-
 <div class="contact-container">
   <div class="left-col">
     <img class="logo" src="img/favicon2.png"/>
   </div>
   <div class="right-col">
-    <div class="theme-switch-wrapper">
-    <label class="theme-switch" for="checkbox">
-        <input type="checkbox" id="checkbox" />
-        <div class="slider round"></div>
-  </label>
-  <div class="description">Dark Mode</div>
-</div>
+ 
+
+
     <div class="text-rsvp">
     <h1>RSVP</h1>
     <p>We are thrilled to invite you to our wedding to celebrate with us. Your presence on our special day would mean the world to us! <br><br>
@@ -291,44 +282,28 @@
       Please click the link below to RSVP. The link will allow you to RSVP for all your family members/ partners that are invited, you will also be prompted to answer a few questions including best contact details and dietary requirements.<br><br>
       We kindly ask that everyone RSVP regardless of whether you have already informed us in person about your attendance or dietary needs. Your response will ensure that we have accurate and up-to-date information for our preparations.<br><br>
       Please click the link to RSVP before Sunday the 8th of October:
-      </p></div>
+      </p><a href="https://docs.google.com/forms/d/e/1FAIpQLSev8WqrzlGYuf0Kf2ItgdMU0eUZA6o4BSkSTI9Kgs2w_xHSYg/viewform?usp=sf_link " target="_blank">
+        <button type="submit" id="submit" name="submit">RSVP</button></a></div>
     
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSev8WqrzlGYuf0Kf2ItgdMU0eUZA6o4BSkSTI9Kgs2w_xHSYg/viewform?usp=sf_link " target="_blank">
-<button type="submit" id="submit" name="submit">Continue</button></a>
-  
-</form>
 
-<div id="success-msg"></div>
+  
+</form>        <div class="left-col1">
+    
+        </div>
+
+
+</div>
+
   </div>
 </div>
- <script>const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-
-  function switchTheme(e) {
-      if (e.target.checked) {
-          document.documentElement.setAttribute('data-theme', 'dark');
-      }
-      else {
-          document.documentElement.setAttribute('data-theme', 'light');
-      }    
-  }
-  
-  toggleSwitch.addEventListener('change', switchTheme, false);
-  
-  
-
-  const submitBtn = document.getElementById('submit');
-    
-
-</script>
-<!-- Image credit: Oliver Sjöström https://www.pexels.com/photo/body-of-water-near-green-mountain-931018/  -->
 
       <div class="secondcontent">
-        <div class="secondtext">
+
           
           <div class="container">
             <h1 id="headline">Countdown till our wedding</h1>
             <div id="countdown">
-              <ul>
+              <ul class="countdown-text">
                 <li><span id="days"></span>days</li>
                 <li><span id="hours"></span>Hours</li>
                 <li><span id="minutes"></span>Minutes</li>
@@ -385,28 +360,7 @@
             }, 0)
         }());</script>
       </div>
-    </div>
 
-
-      
-
-
-
-      
-      <div class="fourthcontent">
-        <div class="fourthtext">
-
-          <h1>PLEASE RSVP BEFORE<br> OCTOBER 7TH 2023</h1>
-          <p>By RSVPing before October 7th, you will be helping us to ensure that the event runs smoothly <br>
-            and that everyone has an enjoyable experience. To RSVP, please click the button below.<br>
-            As you may already know, the event will be taking place on [date] and we are expecting <br>
-            a large turnout. In order for us to properly plan and prepare for the event, <br> it is crucial that we have an accurate headcount.<br> 
-            <br> We look forward to seeing you at the event and thank you <br> in advance for your prompt response.</p><br>
-
-          <button class="butt">LEARN MORE</button>
-        </div>
-      
-      </div>
       
       <footer>
         <ul class="foot">
