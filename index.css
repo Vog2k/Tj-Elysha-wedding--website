@@ -2182,11 +2182,11 @@ a:hover {
     visibility: hidden;
   }
   .trademark {
-    width: 100%;
+    width: 55%;
     height: 100%;
   }
   .trademark img{
-
+    width: 100%;
     height: 100%;
   }
 }

@@ -206,6 +206,7 @@ section {
   grid-template-columns: 65% 1fr;
   grid-auto-rows: min-content;
   grid-gap: 2em;
+
 }
 
 .level-1 h3 {
@@ -216,11 +217,13 @@ section {
 
 .level-1 p {
   margin: 0.5em 0 0 0.5em;
+  
 }
 
 .level-1 p small {
   font-size: 1rem;
   opacity: 0.5;
+  
   
 }
 
@@ -233,6 +236,7 @@ section {
   font-size: 1.2rem;
   padding: 0.3em;
   transition: color 0.3s;
+  
 }
 
 .level-1 ul>li:hover {
@@ -269,6 +273,7 @@ section {
   font-size: 1.5rem;
   font-weight: 600;
   margin: 1em 0;
+  
   border-bottom: 1px solid #000000;
 }
 
@@ -283,7 +288,6 @@ section {
   margin-right: 10px;
   margin-bottom: 10px;
   font-size: 1rem !important;
-
   color: black;
 }
 .level-3 li a{
@@ -598,7 +602,78 @@ section {
   padding: 25px 50px;
 
 }
+.container {
+  padding: 64px;
+}
 
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.xlarge-font {
+  font-size: 64px
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #000000;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+.more-room{
+  display: flex;
+}
+.more-room img{
+  width: 60%;
+  height: 20%;
+  padding: 50px;
+}
+.move{
+  text-align: left;
+  width: 50%;
+
+}
+.column-662 {
+  float: left;
+  width: 100%;
+  padding: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
 
 @media all and (max-width: 768px) {
   .thirdtext {
@@ -749,44 +824,53 @@ section {
   padding-bottom: 50px;
   text-align: center;
   word-spacing: 2px;
+  background: #000;
 }
-
+/*MAIN*/
 .foot li {
   text-align: center;
-  font-size: 22px;
+  font-size: 15px;
   font-weight: 500;
-  padding: 0px 30px;
+  padding: 30px 50px;
   font-family: sans-serif;
 }
-
+/*MAIN*/
 .author {
-  font-size: 22px;
+  font-size: 1px;
   color: #ffffff;
   margin: 0px 10px;
   padding: 0px;
   margin-left: 10px;
   text-align: center;
 }
-
+/*MAIN*/
 .author a {
   text-decoration: none;
   color: #f7f7f7;
   font-weight: 600;
 }
-
+/*MAIN*/
 a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-
+/*MAIN*/
 a:hover {
   color: rgb(128, 128, 128);
   transition-timing-function: ease-in;
   transition: 0.2s;
 }
-
+/*MAIN*/
 .extrapadding {
   visibility: hidden;
+}
+.trademark {
+  width: 30%;
+  height: 100%;
+}
+.trademark img{
+  width: 30%;
+  height: 100%;
 }
 @media all and (max-width: 968px) {
   .fourthcontent {
@@ -852,10 +936,16 @@ a:hover {
     font-weight: lighter;
   }
 
+  .more-room img{
+    width: 50%;
+    height: 20%;
+    padding: 50px;
+
+  }
   .foot {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     color: #fff;
     list-style: none;
     margin: 0;
@@ -864,9 +954,8 @@ a:hover {
     padding-top: 0px;
     padding-bottom: 0px;
     text-align: center;
-
   }
-
+  /*TABLET VERSION*/
   .foot li {
     text-align: center;
     padding: 0px 0px 10px 0px;
@@ -875,7 +964,7 @@ a:hover {
     font-weight: 500;
     font-family: sans-serif;
   }
-
+  /*TABLET VERSION*/
   .author {
     font-size: 10px;
     color: #ffffff;
@@ -884,22 +973,22 @@ a:hover {
     margin-left: 0px;
     text-align: center;
   }
-
-
+  /*TABLET VERSION*/
   a {
     text-decoration: none;
     color: #fff;
   }
-
+  /*TABLET VERSION*/
   a:hover {
     color: rgb(128, 128, 128);
     transition-timing-function: ease-in;
     transition: 0.2s;
   }
-
+  /*TABLET VERSION*/
   .extrapadding {
     visibility: hidden;
   }
+
 }
 @media all and (max-width: 768px) {
   .fourthcontent {
@@ -1014,7 +1103,7 @@ a:hover {
     visibility: hidden;
   }
   .trademark {
-    width: 100%;
+    width: 55%;
     height: 100%;
   }
   .trademark img{
