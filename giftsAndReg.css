@@ -81,19 +81,23 @@ nav ul li:not(#burger) {
 }
 
 #burger {
-  padding: 5px 5px;/*Change on  mobile */
+  padding: 5px 5px;
+  /*Change on  mobile */
   width: min-content;
-  height: 32px;/*Change on  mobile */
+  height: 32px;
+  /*Change on  mobile */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   cursor: pointer;
-  background: black;/*Change on  mobile */
+  background: black;
+  /*Change on  mobile */
 }
 
 #burger span {
   display: block;
-  height: 2px; /*Change on  mobile */
+  height: 2px;
+  /*Change on  mobile */
   width: 22px;
   background-color: var(--white);
 
@@ -106,18 +110,18 @@ nav ul li:not(#burger) {
 }
 
 .active span:nth-of-type(2) {
-  
-  -ms-transform: rotate(20deg); /* IE 9 */
-  transform: rotate(90deg) scaleX(0.7)
-   translateY(0px) translateX(5.5px);
+
+  -ms-transform: rotate(20deg);
+  /* IE 9 */
+  transform: rotate(90deg) scaleX(0.7) translateY(0px) translateX(5.5px);
 }
 
 .active span:nth-of-type(3) {
   transform: translateX(3px) scaleX(0.3);
 }
+
 .active span:nth-of-type(4) {
-  transform: translateY(2.5px) translateX(5px)
-   scaleX(0.6);
+  transform: translateY(2.5px) translateX(5px) scaleX(0.6);
 }
 
 /*  MAIN: Slider Section
@@ -189,6 +193,7 @@ article {
 .hi-1 {
   background-image: url("img/reg.jpg");
 }
+
 section {
   position: absolute;
   top: 0;
@@ -217,14 +222,14 @@ section {
 
 .level-1 p {
   margin: 0.5em 0 0 0.5em;
-  
+
 }
 
 .level-1 p small {
   font-size: 1rem;
   opacity: 0.5;
-  
-  
+
+
 }
 
 .level-1 p small:hover {
@@ -236,12 +241,12 @@ section {
   font-size: 1.2rem;
   padding: 0.3em;
   transition: color 0.3s;
-  
+
 }
 
 .level-1 ul>li:hover {
   color: var(--black);
-  
+
 }
 
 .level-1 li:nth-of-type(1) {
@@ -273,7 +278,7 @@ section {
   font-size: 1.5rem;
   font-weight: 600;
   margin: 1em 0;
-  
+
   border-bottom: 1px solid #000000;
 }
 
@@ -290,7 +295,8 @@ section {
   font-size: 1rem !important;
   color: black;
 }
-.level-3 li a{
+
+.level-3 li a {
   padding: 0.5em 1em !important;
   text-decoration: none;
   margin-right: 10px;
@@ -371,9 +377,11 @@ section {
 
   #burger span {
     display: block;
-    height: 2px;/*Change on  mobile */
+    height: 2px;
+    /*Change on  mobile */
     width: 22px;
-    background-color: var(--white);/*Change on  mobile */
+    background-color: var(--white);
+    /*Change on  mobile */
 
     transition: transform 0.3s 0.3s;
   }
@@ -395,6 +403,7 @@ section {
     font-size: calc(3.375rem * var(--smaller));
   }
 }
+
 .firsttext {
   padding: 300px 0px 110px 110px;
   position: relative;
@@ -409,7 +418,7 @@ section {
 .secondcontent {
   padding-top: 0px;
   margin: 0px;
-  background: var(--pill);
+  background:white;
 }
 
 /*ADDRESS IF ALIGN SHOULD BE CENTER OT LEFT*/
@@ -433,31 +442,19 @@ section {
   position: relative;
   z-index: 2;
   color: rgb(0, 0, 0);
-  text-transform: uppercase;
+
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 45px;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-.bank-dets{  font-weight: lighter;
-  padding: 50px 130px 80px 130px;
-  position: relative;
-  z-index: 2;
-  color: rgb(0, 0, 0);
-  text-transform: none;
-  font-family: sans-serif;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
-  line-height: 30px;
 
-}
 
 @media all and (max-width: 768px) {
   .secondcontent {
-    background: url(img/beaut.jpg) no-repeat center cover;
+   
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -493,19 +490,21 @@ section {
 
 
   }
+
   @media all and (max-width: 768px) {
     h1 {
       font-size: calc(1.5rem * var(--smaller));
     }
-  
+
     li {
       font-size: calc(1.125rem * var(--smaller));
     }
-  
+
     li span {
       font-size: calc(3.375rem * var(--smaller));
     }
   }
+
   .thirdcontent {
     background: #000;
     padding-top: 80px;
@@ -532,8 +531,8 @@ section {
   }
 }
 
-.thirdcontent{
-  background: url(img/Tanya+Shaun-9.jpg) no-repeat left center;
+.thirdcontent {
+  background: url(img/Tanya+Shaun-9.jpg) no-repeat  center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -541,7 +540,8 @@ section {
   background-attachment: fixed;
   position: relative;
   width: 100%;
-  padding: 180px;
+  height: 20vh;
+
 
 }
 
@@ -570,28 +570,7 @@ section {
 
 }
 
-#wishingWell {
-  padding: 0px 50px;
-  font-size: 46px;
-  word-spacing: 2px;
-  font-weight: lighter;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
 
-.wishingP {
-  font-size: 20px;
-  font-family: Barlow;
-  text-transform: none;
-  word-spacing: 2px;
-  font-weight: lighter;
-  padding: 0px 0px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-}
 
 .thirdtext p {
   font-size: 20px;
@@ -602,6 +581,7 @@ section {
   padding: 25px 50px;
 
 }
+
 .container {
   padding: 64px;
 }
@@ -634,43 +614,38 @@ section {
 
 .button {
   border: none;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
-  background-color: #000000;
+  border-radius: 5%;
+  background-color: #ffffff;
 }
 
-img {
+.container img {
   display: block;
   height: auto;
   max-width: 100%;
+  margin: 20px;
 }
-.more-room{
-  display: flex;
-}
-.more-room img{
-  width: 60%;
-  height: 20%;
-  padding: 50px;
-}
-.move{
-  text-align: left;
-  width: 50%;
 
-}
 .column-662 {
   float: left;
   width: 100%;
   padding: 20px;
 }
+
+
+
 @media screen and (max-width: 1000px) {
+
   .column-66,
   .column-33 {
     width: 100%;
     text-align: center;
   }
-  img {
+
+  .container img {
     margin: auto;
   }
 }
@@ -725,6 +700,10 @@ img {
     width: 100%;
     height: 80%;
   }
+  .container {
+    padding: 14px;
+  }
+
 
   .butt {
     width: 160px;
@@ -750,71 +729,6 @@ img {
   }
 }
 
-
-
-.fourthcontent {
-  background: url(img/Reception.jpeg) rgba(0, 0, 0, 0.6) no-repeat center center;
-  background-blend-mode: multiply;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 140px;
-  margin: 0px 0px 0px 0px;
-}
-
-.fourthtext {
-  padding: 80px 160px 80px 0px;
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  font-size: 20px;
-  text-align: right;
-  font-weight: lighter;
-}
-
-.fourthtext p {
-  font-size: 25px;
-  font-family: Barlow;
-  text-transform: none;
-  word-spacing: 2px;
-  font-weight: lighter;
-}
-
-.fifthcontent {
-  background: url(img/unplugged.jpeg) rgba(0, 0, 0, 0.6) no-repeat center center;
-  background-blend-mode: multiply;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 40px;
-  height: 700px;
-  margin: 0px 0px 50px 0px;
-}
-
-.fifthtext {
-  padding: 120px 160px 80px 80px;
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  font-size: 20px;
-  text-align: Left;
-  font-weight: lighter;
-}
-
-.fifthtext p {
-  font-size: 25px;
-  font-family: Barlow;
-  text-transform: none;
-  word-spacing: 2px;
-  font-weight: lighter;
-}
-
 .foot {
   display: flex;
   color: #fff;
@@ -826,6 +740,7 @@ img {
   word-spacing: 2px;
   background: #000;
 }
+
 /*MAIN*/
 .foot li {
   text-align: center;
@@ -834,6 +749,7 @@ img {
   padding: 30px 50px;
   font-family: sans-serif;
 }
+
 /*MAIN*/
 .author {
   font-size: 1px;
@@ -843,105 +759,43 @@ img {
   margin-left: 10px;
   text-align: center;
 }
+
 /*MAIN*/
 .author a {
   text-decoration: none;
   color: #f7f7f7;
   font-weight: 600;
 }
+
 /*MAIN*/
 a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
+
 /*MAIN*/
 a:hover {
   color: rgb(128, 128, 128);
   transition-timing-function: ease-in;
   transition: 0.2s;
 }
+
 /*MAIN*/
 .extrapadding {
   visibility: hidden;
 }
+
 .trademark {
   width: 30%;
   height: 100%;
 }
-.trademark img{
+
+.trademark img {
   width: 30%;
   height: 100%;
 }
+
 @media all and (max-width: 968px) {
-  .fourthcontent {
-    background: url(img/Reception.jpeg) rgba(0, 0, 0, 0.6) no-repeat center center;
-    background-blend-mode: multiply;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding-top: 140px;
-    margin: 80px 0px 0px 0px;
-  }
-
-  .fourthtext {
-    padding: 20px 20px;
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: center;
-    font-weight: lighter;
-  }
-
-  .fourthtext p {
-    font-size: 18px;
-    font-family: Barlow;
-    text-transform: none;
-    word-spacing: 2px;
-    font-weight: lighter;
-  }
-
-  .fifthcontent {
-    background: url(img/unplugged.jpeg) rgba(0, 0, 0, 0.6) no-repeat center center;
-    background-blend-mode: multiply;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding-top: 40px;
-    height: 800px;
-    margin: 0px 0px 80px 0px;
-  }
-
-  .fifthtext {
-    padding: 20px 60px;
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: center;
-    font-weight: lighter;
-  }
-
-  .fifthtext p {
-    font-size: 18px;
-    font-family: Barlow;
-    text-transform: none;
-    word-spacing: 2px;
-    font-weight: lighter;
-  }
-
-  .more-room img{
-    width: 50%;
-    height: 20%;
-    padding: 50px;
-
-  }
   .foot {
     width: 100%;
     display: flex;
@@ -955,6 +809,7 @@ a:hover {
     padding-bottom: 0px;
     text-align: center;
   }
+
   /*TABLET VERSION*/
   .foot li {
     text-align: center;
@@ -964,6 +819,7 @@ a:hover {
     font-weight: 500;
     font-family: sans-serif;
   }
+
   /*TABLET VERSION*/
   .author {
     font-size: 10px;
@@ -973,87 +829,28 @@ a:hover {
     margin-left: 0px;
     text-align: center;
   }
+
   /*TABLET VERSION*/
   a {
     text-decoration: none;
     color: #fff;
   }
+
   /*TABLET VERSION*/
   a:hover {
     color: rgb(128, 128, 128);
     transition-timing-function: ease-in;
     transition: 0.2s;
   }
+
   /*TABLET VERSION*/
   .extrapadding {
     visibility: hidden;
   }
 
 }
+
 @media all and (max-width: 768px) {
-  .fourthcontent {
-    background: url(img/Reception.jpeg) rgba(0, 0, 0, 0.6) no-repeat center center;
-    background-blend-mode: multiply;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding-top: 140px;
-    margin: 80px 0px 0px 0px;
-  }
-
-  .fourthtext {
-    padding: 20px 20px;
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: center;
-    font-weight: lighter;
-  }
-
-  .fourthtext p {
-    font-size: 18px;
-    font-family: Barlow;
-    text-transform: none;
-    word-spacing: 2px;
-    font-weight: lighter;
-  }
-
-  .fifthcontent {
-    background: url(img/unplugged.jpeg) rgba(0, 0, 0, 0.6) no-repeat center center;
-    background-blend-mode: multiply;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding-top: 40px;
-    height: 800px;
-    margin: 0px 0px 80px 0px;
-  }
-
-  .fifthtext {
-    padding: 20px 60px;
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: center;
-    font-weight: lighter;
-  }
-
-  .fifthtext p {
-    font-size: 18px;
-    font-family: Barlow;
-    text-transform: none;
-    word-spacing: 2px;
-    font-weight: lighter;
-  }
-
   .foot {
     width: 100%;
     display: flex;
@@ -1102,8 +899,9 @@ a:hover {
   .extrapadding {
     visibility: hidden;
   }
+
   .trademark {
-    width: 55%;
+    width: 100%;
     height: 100%;
   }
   .trademark img{
@@ -1112,9 +910,10 @@ a:hover {
   }
 
 }
+
 @media all and (max-width: 944px) {
   .secondcontent {
-    background: url(img/beaut.jpg) no-repeat center cover;
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1122,13 +921,13 @@ a:hover {
     position: relative;
     width: 100%;
     margin: 0;
-    padding: 60px;
+    padding: 20px;
 
   }
 
   .secondtext {
 
-    padding: 10px 0px 50px 0px;
+    padding: 10px 0px 10px 0px;
     position: relative;
     z-index: 2;
     color: rgb(0, 0, 0);

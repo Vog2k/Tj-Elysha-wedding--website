@@ -138,6 +138,7 @@ figure.slider figure figcaption {
     clear: both
   }
   .column-33 {
+
     float: left;
     width: 50%;
     padding: 20px;
@@ -153,6 +154,7 @@ figure.slider figure figcaption {
     padding: 0px 20px;
   }
   .column-66 {
+    
     float: left;
     width: 50%;
     padding: 20px;
@@ -196,7 +198,6 @@ img {
 
 @media screen and (max-width: 1000px) {
 
-  .column-66,
   .column-33 {
     width: 100%;
     text-align: center;
@@ -204,6 +205,12 @@ img {
 
   img {
     margin: auto;
+  }
+  .column-66 {
+
+    width: 100%;
+    text-align: center;
+
   }
 }
 
@@ -464,19 +471,19 @@ article {
 }
 
 .hi-1 {
-  background-image: url("img/Matakana\ Estate\ web\ only-188.jpg");
+  background-image: url("img/Gettingthere.jpg");
 }
 
 .hi-2 {
-  background-image: url("img/matakana-estate-2_1.jpg");
+  background-image: url("img/Gettingthere1.jpg");
 }
 
 .hi-3 {
-  background-image: url("img/matakana-estate-4.jpg");
+  background-image: url("img/Gettingthere2.jpg");
 }
 
 .hi-4 {
-  background-image: url("img/matakana-outside.jpg");
+  background-image: url("iimg/Gettingthere3.jpg");
 }
 
 section {
