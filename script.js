@@ -9,10 +9,10 @@ const dislike = document.querySelector('#dislike');
 // constants
 const urls = [
   'img/FirstDate.jpeg',
-  'img/',
+  'img/Rota.jpeg',
   'img/FirstXmas.jpeg',
   'img/FirstXmas1.jpeg',
-  'img/halloweeen.jpeg',
+  'img/eight.jpeg',
   'img/Rotovegas.jpeg',
   'img/Whangamata.jpeg',
   'img/wanaka.jpg',

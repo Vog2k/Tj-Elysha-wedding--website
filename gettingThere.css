@@ -471,19 +471,21 @@ article {
 }
 
 .hi-1 {
-  background-image: url("img/Gettingthere.jpg");
+  background-image: url("img/Gettingthere2.jpg");
+  background-position: 65% !important;
+
 }
 
 .hi-2 {
   background-image: url("img/Gettingthere1.jpg");
+  background-position: 63% !important;
 }
 
 .hi-3 {
-  background-image: url("img/Gettingthere2.jpg");
-}
 
-.hi-4 {
-  background-image: url("iimg/Gettingthere3.jpg");
+
+  background-image: url("img/Gettingthere.jpg");
+  background-position: 65% !important;
 }
 
 section {

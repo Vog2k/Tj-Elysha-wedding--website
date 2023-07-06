@@ -191,7 +191,7 @@ article {
 
 
 .hi-1 {
-  background-image: url("img/reg.jpg");
+  background-image: url("img/Reg1.jpg");
 }
 
 section {
@@ -418,7 +418,8 @@ section {
 .secondcontent {
   padding-top: 0px;
   margin: 0px;
-  background:white;
+  background: url(https://www.youtube.com/watch?v=IuQBcay4k5U?autoplay=1&mute=1&loop=1);
+
 }
 
 /*ADDRESS IF ALIGN SHOULD BE CENTER OT LEFT*/
@@ -454,7 +455,8 @@ section {
 
 @media all and (max-width: 768px) {
   .secondcontent {
-   
+    background: url(https://www.youtube.com/watch?v=IuQBcay4k5U?autoplay=1&mute=1&loop=1);
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -598,6 +600,7 @@ section {
   padding: 20px;
 }
 
+
 .column-33 {
   float: left;
   width: 33.33333%;
@@ -624,7 +627,7 @@ section {
 
 .container img {
   display: block;
-  height: auto;
+  height: 25vh;
   max-width: 100%;
   margin: 20px;
 }
@@ -913,7 +916,7 @@ a:hover {
 
 @media all and (max-width: 944px) {
   .secondcontent {
-
+    background: url(https://www.youtube.com/watch?v=IuQBcay4k5U?autoplay=1&mute=1&loop=1);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

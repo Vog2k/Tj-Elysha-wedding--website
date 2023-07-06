@@ -1,11 +1,4 @@
-.firstcontent {
-  background: url(img/brewary.jpg) rgba(0, 0, 0, 0.3) no-repeat center center;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 500px;
-}
+
 
 .firsttext {
   padding: 300px 0px 110px 110px;
@@ -784,13 +777,6 @@ article {
   background-image: url("img/T\ \(2\).jpg");
 }
 
-.hi-4 {
-  background-image: url("img/Rotovegas.jpeg");
-}
-
-.hi-5 {
-  background-image: url("img//Use-As-Banneer.jpeg");
-}
 
 section {
   position: absolute;

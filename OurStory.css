@@ -14,6 +14,7 @@ html {
     padding: 0;
   }
 
+
   
 .boxForTinder{
   width: 100%;
@@ -281,7 +282,7 @@ html {
   
   header {
     width: 100%;
-    min-height: 100vh;
+
     overflow-x: hidden;
   }
   
@@ -381,6 +382,7 @@ html {
     top: 0;
     left: 0;
     z-index: var(--i);
+
   }
   
   .hero-info {
@@ -424,30 +426,12 @@ html {
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+
   }
 
   
-  .hi-1 {
-    background-image: url("img/1st\ date.jpg");
-  }
-  .hi-2 {
-    background-image: url("img/Teatatu.jpg");
-  }
-  
-  .hi-3 {
-    background-image: url("img/1date.jpeg");
-  }
-  
-  .hi-4 {
-    background-image: url("img/Xmas.jpeg");
-  }
-  
-  .hi-5 {
-    background-image: url("img/Lake\ hawea.jpg");
-  }
+
+
   
   section {
     position: absolute;
@@ -556,6 +540,18 @@ html {
     font-size: 1rem !important;
     cursor: pointer;
     color: black;
+  }
+  .video-responsive {
+    padding-bottom: 50%;
+    position: relative;
+  }
+  /*MAIN*/
+  .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
   }
   
   @media screen and (max-width: 600px) {
@@ -894,24 +890,24 @@ html {
   
   
   .fourthcontent {
-    background: url(img/Tj\ and\ elysha.jpg) rgba(0, 0, 0, 0.6) no-repeat center center;
+    background: url(img/TJ.jpg) rgba(0, 0, 0, 0.6) no-repeat center center;
     background-blend-mode: multiply;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding: 50px;
+    padding: 120px;
     margin: 0px 0px 0px 0px;
   }
   
   .fifthcontent {
-    background: url(img/1st\ date.jpg) rgba(0, 0, 0, 0.6) no-repeat center center;
+    background: url(img/ELY.jpg) rgba(0, 0, 0, 0.6) no-repeat center center;
     background-blend-mode: multiply;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  padding: 50px;
+  padding: 120px;
     height: auto;
     margin: 0px 0px 80px 0px;
   }
@@ -1030,7 +1026,7 @@ html {
 
   @media all and (max-width: 1024px) {
     .fourthcontent {
-      background: url(img//Tj\ and\ elysha.jpg) rgba(0, 0, 0, 0.6) no-repeat center center;
+      background: url(img/TJ.jpg) rgba(0, 0, 0, 0.6) no-repeat center center;
       background-blend-mode: multiply;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -1065,7 +1061,7 @@ html {
   
   
     .fifthcontent {
-      background: url(img/unplugged.jpeg) rgba(0, 0, 0, 0.6) no-repeat center center;
+      background: url(img/ELY.jpg) rgba(0, 0, 0, 0.6) no-repeat center center;
       background-blend-mode: multiply;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -1102,13 +1098,29 @@ html {
   }
 
   @media all and (max-width: 768px) {
+    .video-responsive {
+      overflow: hidden;
+      padding-bottom: 100%;
+      position: relative;
+      height: 0;
+    }
+    /*MAIN*/
+    .video-responsive iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
     .fourthcontent {
-      background: url(img//Tj\ and\ elysha.jpg) rgba(0, 0, 0, 0.6) no-repeat center center;
+      background: url(img/TJ.jpg) rgba(0, 0, 0, 0.6) no-repeat center center;
       background-blend-mode: multiply;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
+      background-position: 56%;
+      padding: 20px;
     }
   
     .fourthtext {
@@ -1140,13 +1152,15 @@ html {
 
   
     .fifthcontent {
-      background: url(img/unplugged.jpeg) rgba(0, 0, 0, 0.6) no-repeat center center;
+      background: url(img/ELY.jpg) rgba(0, 0, 0, 0.6) no-repeat center center;
       background-blend-mode: multiply;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
+      padding: 20px;
       height: auto;
+      background-position: 34%;
       
     }
   

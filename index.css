@@ -154,8 +154,8 @@ main {
   .main-banner-title{
 
     color: var(--white);
-    font-size: clamp(2.0rem, 2vw, 0.5rem);
-    line-height: clamp(3.2rem, 6vw, 7rem);
+    font-size: 20px;
+    line-height: 20px;
     text-transform: uppercase;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   }
@@ -175,8 +175,8 @@ main {
   .main-banner-title{
 
     color: var(--white);
-    font-size: clamp(1.5rem, 2vw, 0.5rem);
-    line-height: clamp(3.2rem, 6vw, 7rem);
+    font-size: 20px;
+    line-height: 20px;
     text-transform: uppercase;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   }
@@ -196,8 +196,8 @@ main {
   .main-banner-title{
 
     color: var(--white);
-    font-size: clamp(1.2rem, 2vw, 0.5rem);
-    line-height: clamp(3.2rem, 6vw, 7rem);
+    font-size: 20px;
+    line-height: 20px;
     text-transform: uppercase;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   }
@@ -229,7 +229,7 @@ main {
     z-index: 9;
     padding: 1em 1em;
     top: 10%;
-    left: 5%;
+    left: 0%;
     display: flex;
     
   }
@@ -321,12 +321,6 @@ article {
 
 .hi-1 {
   background-image: url("img/Hero1.jpg");
-  width: 100%;
-  height: 100%;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .hi-2 {
@@ -345,7 +339,7 @@ article {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+
   }
 
   .hi-1 {
@@ -355,11 +349,13 @@ article {
   }
   
   .hi-2 {
-    background-image: url("img/Hero2.jpg");
+    background-image: url("img/hero5.jpg");
+
   }
   
   .hi-3 {
     background-image: url("img/Hero3.jpg");
+    background-position: 26% !important;
   }
 
 
@@ -1937,126 +1933,61 @@ hr {
 }
 
 /*MAIN*/
-.fourthcontent {
-  background: url(img/matakana-outside.jpg) rgba(0, 0, 0, 0.6) no-repeat center center;
-  background-blend-mode: multiply;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 40px;
-  margin: 120px 0px 0px 0px;
-}
-/*MAIN*/
-.fourthtext {
-  padding: 80px 60px 80px 0px;
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  font-size: 20px;
-  text-align: right;
-  font-weight: lighter;
-}
-/*MAIN*/
-.fourthtext p {
-  font-size: 25px;
-  font-family: Barlow;
-  text-transform: none;
-  word-spacing: 2px;
-  font-weight: lighter;
-}
-/*MAIN*/
+.footer{
+  background:#000;
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:gray;
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:gray;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color:#fff;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }
 
-.fifthcontent {
-  background: url(img/unplugged.jpeg) rgba(0, 0, 0, 0.6) no-repeat center center;
-  background-blend-mode: multiply;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 20px;
-  height: 600px;
-  margin: 0px 0px 50px 0px;
-}
-/*MAIN*/
-.fifthtext {
-  padding: 120px 160px 80px 80px;
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  font-size: 20px;
-  text-align: Left;
-  font-weight: lighter;
-}
-/*MAIN*/
-.fifthtext p {
-  font-size: 25px;
-  font-family: Barlow;
-  text-transform: none;
-  word-spacing: 2px;
-  font-weight: lighter;
-}
-/*MAIN*/
-.foot {
-  display: flex;
-  color: #fff;
-  list-style: none;
-  margin: 0px 0px;
-  padding: 0px 30px;
-  padding-bottom: 0px;
-  text-align: center;
-  word-spacing: 2px;
-}
-/*MAIN*/
-.foot li {
-  text-align: center;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 120px 50px;
-  font-family: sans-serif;
-}
-/*MAIN*/
-.author {
-  font-size: 1px;
-  color: #ffffff;
-  margin: 0px 10px;
-  padding: 0px;
-  margin-left: 10px;
-  text-align: center;
-}
-/*MAIN*/
-.author a {
-  text-decoration: none;
-  color: #f7f7f7;
-  font-weight: 600;
-}
-/*MAIN*/
-a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-/*MAIN*/
-a:hover {
-  color: rgb(128, 128, 128);
-  transition-timing-function: ease-in;
-  transition: 0.2s;
-}
-/*MAIN*/
-.extrapadding {
-  visibility: hidden;
-}
-.trademark {
-  width: 30%;
-  height: 100%;
-}
-.trademark img{
-  width: 50%;
-  height: 100%;
-}
+
   /*TABLET VERSION*/
 @media all and (max-width: 1044px) {
   .fourthcontent {
@@ -2144,7 +2075,7 @@ a:hover {
     text-align: center;
     padding: 0px 0px 10px 0px;
     /*Change on  mobile */
-    font-size: 25px;
+    font-size: 2px;
     font-weight: 500;
     font-family: sans-serif;
   }
