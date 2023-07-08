@@ -600,6 +600,13 @@ section {
     text-align: center;
     font-family: 'Pinyon Script', sans-serif;
   }
+  .hero-info h3 {
+    color: var(--black);
+    font-size:30px;
+    line-height: 50px;
+    font-family: 'Pinyon Script', sans-serif;
+     
+  }
 
 
   nav {
@@ -762,7 +769,7 @@ section {
   .hero-info h1 {
     color: var(--black);
     font-size: 30px;
-    line-height: 40px;
+    line-height: 50px;
     word-spacing: 10px;
     font-family: 'Pinyon Script', sans-serif;
 
