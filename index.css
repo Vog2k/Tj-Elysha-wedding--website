@@ -133,77 +133,15 @@ main {
 }
 
 .main-banner-title2 {
-  font-family: 'Pinyon Script', sans-serif;
+  font-family: 'Honduras Script Demo', sans-serif;                                      
   color: var(--black);
-  font-size: 40px;
+  font-size: 60px;
   padding: 1em 1em;
   text-align: center;
   line-height: 40px;
   text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.87);
+  font-weight: 300;
 }
-
-@media screen and (max-width: 1190px) {
-  .main-banner-title2 {
-
-    color: var(--white);
-    font-size: 20px;
-    line-height: 20px;
-
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-  }
-
-}
-
-@media screen and (max-width: 927px) {
-  .main-banner-title2 {
-
-    color: var(--white);
-    font-size: 20px;
-    line-height: 20px;
-
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-  }
-
-
-}
-
-@media screen and (max-width: 699px) {
-  .main-banner-title2 {
-
-    color: var(--white);
-    font-size: 20px;
-    line-height: 20px;
-
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-  }
-
-}
-
-@media screen and (max-width: 599px) {
-  .main-banner-title2 {
-
-    color: var(--white);
-    font-size: 20px;
-    line-height: 20px;
-
-    text-align: center;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-  }
-
-}
-
-@media screen and (max-width: 399px) {
-  .main-banner-title2 {
-
-    color: var(--white);
-    font-size: 15px;
-    line-height: 15px;
-
-    text-align: center;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-  }
-}
-
 .main-banner {
   width: 100%;
   position: relative;
@@ -212,29 +150,37 @@ main {
   top: 11%;
   left: 0%;
   display: inline;
-  font-family: 'Pinyon Script', sans-serif;
+  font-family: 'Honduras Script Demo', sans-serif;
+                                                
                                                                              
 }
 
 .main-banner-title {
 
   color: var(--black);
-  font-size: 80px;
+  font-size: 120px;
   text-align: center;
   line-height: 20px;
   text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.87);
+  font-weight: 300;
 }
 
 @media screen and (max-width: 1190px) {
   .main-banner-title {
 
-    color: var(--white);
-    font-size: 20px;
+    color: var(--black);
+    font-size:100px;
     line-height: 20px;
-
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    font-weight: 300;
   }
-
+  .main-banner-title2 {
+    color: var(--black);
+    font-size: 60px;
+    line-height: 50px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    font-weight: 100;
+  }
   .main-banner {
     width: 100%;
     position: relative;
@@ -250,8 +196,14 @@ main {
 
 @media screen and (max-width: 927px) {
   .main-banner-title {
+    color: var(--black);
+    font-size: 20px;
+    line-height: 20px;
 
-    color: var(--white);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  }
+  .main-banner-title2 {
+    color: var(--black);
     font-size: 20px;
     line-height: 20px;
 
@@ -273,8 +225,14 @@ main {
 
 @media screen and (max-width: 699px) {
   .main-banner-title {
+    color: var(--black);
+    font-size: 60px;
+    line-height: 20px;
 
-    color: var(--white);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  }
+  .main-banner-title2 {
+    color: var(--black);
     font-size: 20px;
     line-height: 20px;
 
@@ -296,8 +254,15 @@ main {
 
 @media screen and (max-width: 599px) {
   .main-banner-title {
+    color: var(--black);
+    font-size: 40px;
+    line-height: 20px;
 
-    color: var(--white);
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  }
+  .main-banner-title2 {
+    color: var(--black);
     font-size: 20px;
     line-height: 20px;
 
@@ -320,11 +285,16 @@ main {
 
 @media screen and (max-width: 399px) {
   .main-banner-title {
-
-    color: var(--white);
-    font-size: 15px;
+    color: var(--black);
+    font-size: 55px;
+    line-height: 35px;
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  }
+  .main-banner-title2 {
+    color: var(--black);
+    font-size: 20px;
     line-height: 15px;
-
     text-align: center;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   }
@@ -334,7 +304,7 @@ main {
     position: relative;
     z-index: 9;
     padding: 1em 1em;
-    top: 10%;
+    top: 8%;
     left: 0%;
     display: inline;
 
@@ -409,8 +379,8 @@ article {
 }
 
 .hi-3 {
-  background-image: url("img/Hero3.jpg");
-  background-position: top;
+  background-image: url("img/MAINHERO.jpg");
+  background-position: center;
 }
 
 @media screen and (max-width: 954px) {
@@ -427,10 +397,9 @@ article {
   .hero-image {
     width: 100%;
     height: 100%;
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: fixed;
+
 
   }
 
@@ -443,13 +412,14 @@ article {
 
   .hi-2 {
     background-image: url("img/hero5.jpg");
+    background-position: bottom !important;
 
 
   }
 
   .hi-3 {
-    background-image: url("img/Hero3.jpg");
-    background-position: 26% !important;
+    background-image: url("img/MAINHERO.jpg");
+    background-position: 37% !important;
   }
 
 
@@ -1419,10 +1389,10 @@ section {
   padding: 0px 0px 0px 0px;
   position: relative;
   z-index: 2;
+  font-weight: 0;
   color: rgb(0, 0, 0);
   font-family: 'Pinyon Script', sans-serif;
-
-  font-size: 70px;
+  font-size: 60px;
   text-shadow: 0 4px 30px rgba(255, 255, 255, 0.638);
   text-align: center;
   margin: 0px;
@@ -1566,7 +1536,7 @@ hr {
     position: relative;
     z-index: 2;
     color: rgb(0, 0, 0);
-    font-family: 'Sunnyletter', sans-serif;
+    font-family: 'Pinyon Script', sans-serif;
     font-size: 40px;
     text-shadow: 0 4px 30px rgba(255, 255, 255, 0.638);
     text-align: center;
@@ -1607,7 +1577,8 @@ hr {
     position: relative;
     z-index: 2;
     color: rgb(0, 0, 0);
-    font-family: 'Sunnyletter', sans-serif;
+    font-family: 'Pinyon Script', sans-serif;
+
     font-size: 70px;
     text-align: center;
     margin: 0px;
@@ -1676,7 +1647,7 @@ hr {
     position: relative;
     z-index: 2;
     color: rgb(0, 0, 0);
-    font-family: 'Sunnyletter', sans-serif;
+    font-family: 'Pinyon Script', sans-serif;
     font-size: 40px;
     text-shadow: 0 4px 30px rgba(255, 255, 255, 0.638);
     text-align: center;
@@ -1717,7 +1688,7 @@ hr {
     position: relative;
     z-index: 2;
     color: rgb(0, 0, 0);
-    font-family: 'Sunnyletter', sans-serif;
+    font-family: 'Pinyon Script', sans-serif;
     font-size: 70px;
     text-align: center;
     margin: 0px;
@@ -1788,7 +1759,7 @@ hr {
     position: relative;
     z-index: 2;
     color: rgb(0, 0, 0);
-    font-family: 'Sunnyletter', sans-serif;
+    font-family: 'Pinyon Script', sans-serif;
     font-size: 70px;
     text-align: center;
     margin: 0px;
@@ -1801,7 +1772,7 @@ hr {
     position: relative;
     z-index: 2;
     color: rgb(0, 0, 0);
-    font-family: 'Sunnyletter', sans-serif;
+    font-family: 'Pinyon Script', sans-serif;
     font-size: 40px;
     text-shadow: 0 4px 30px rgba(255, 255, 255, 0.638);
     text-align: center;
@@ -1814,7 +1785,7 @@ hr {
     position: relative;
     z-index: 2;
     color: rgb(0, 0, 0);
-    font-family: 'Sunnyletter', sans-serif;
+    font-family: 'Pinyon Script', sans-serif;
     font-size: 55px;
     text-shadow: 0 4px 30px rgba(255, 255, 255, 0.638);
     text-align: center;
@@ -1912,7 +1883,7 @@ hr {
     position: relative;
     z-index: 2;
     color: rgb(0, 0, 0);
-    font-family: 'Sunnyletter', sans-serif;
+    font-family: 'Pinyon Script', sans-serif;
     font-size: 40px;
     text-shadow: 0 4px 30px rgba(255, 255, 255, 0.638);
     text-align: center;
@@ -1928,7 +1899,8 @@ hr {
     position: relative;
     z-index: 2;
     color: rgb(0, 0, 0);
-    font-family: 'Sunnyletter', sans-serif;
+    font-family: 'Pinyon Script', sans-serif;
+
     font-size: 55px;
     text-shadow: 0 4px 30px rgba(255, 255, 255, 0.638);
     text-align: center;
@@ -2052,6 +2024,7 @@ hr {
   font-size: 56px;
   word-spacing: 2px;
   font-weight: lighter;
+  text-transform: none;
   font-family: 'Pinyon Script', sans-serif;
 
 }
@@ -2060,6 +2033,7 @@ hr {
   font-size: 36px;
   word-spacing: 2px;
   font-weight: lighter;
+  text-transform: none;
   font-family: 'Pinyon Script', sans-serif;
 
 }
@@ -2112,7 +2086,7 @@ hr {
   /*TABLET VERSION*/
   .thirdtext h1 {
     padding: 0px 80px;
-    font-size: 20px;
+    font-size: 30px;
     word-spacing: 2px;
     font-weight: lighter;
     text-align: center;
@@ -2122,7 +2096,7 @@ hr {
   /*TABLET VERSION*/
   .thirdtext h2 {
     padding: 10px 0px;
-    font-size: 15px;
+    font-size: 20px;
     word-spacing: 2px;
     font-weight: lighter;
     justify-items: center;
