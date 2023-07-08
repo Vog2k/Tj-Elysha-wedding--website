@@ -270,20 +270,17 @@ main {
 
 }
 
-@media (min-width: 375px) {
+@media screen and (max-width: 375px) {
   .main-banner-title {
     color: var(--black);
-    width: auto;
     font-size: 55px;
     line-height: 35px;
     text-align: center;
-
   }
   .main-banner-title2 {
     color: var(--black);
-    width: auto;
-    font-size: 20px;
-    line-height: 15px;
+    font-size: 35px;
+    line-height: 35px;
     text-align: center;
   }
 
@@ -399,15 +396,16 @@ article {
   }
 
   .hi-2 {
-    background-image: url("img/hero5.jpg");
-    background-position: bottom !important;
+
+    background-image: url("img/MAINHERO.jpg");
+    background-position: 37% !important;
 
 
   }
 
   .hi-3 {
-    background-image: url("img/MAINHERO.jpg");
-    background-position: 37% !important;
+    background-image: url("img/hero-mobile-main.jpg");
+    background-position: top !important;
   }
 
 
@@ -1862,7 +1860,7 @@ hr {
   }
 }
 
-@media(min-width: 375px) {
+@media all and (max-width: 399px) {
   .secondtext {
     padding: 0px 0px 0px 0px;
     position: relative;
