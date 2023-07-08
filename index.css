@@ -562,6 +562,13 @@ section {
     text-align: center;
     font-family: 'Pinyon Script', sans-serif;
   }
+  .hero-info h3 {
+    color: var(--black);
+    font-size:30px;
+    line-height: 70px;
+    font-family: 'Pinyon Script', sans-serif;
+     
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -760,6 +767,13 @@ section {
     font-family: 'Pinyon Script', sans-serif;
 
 
+  }
+  .hero-info h3 {
+    color: var(--black);
+    font-size:30px;
+    line-height: 50px;
+    font-family: 'Pinyon Script', sans-serif;
+     
   }
 
 
@@ -1530,7 +1544,7 @@ hr {
     background-position: center;
     width: 100%;
     margin: 0;
-    padding: 60px;
+    padding: 0px;
   }
 
   .secondtext {
@@ -1638,7 +1652,7 @@ hr {
     position: relative;
     width: 100%;
     margin: 0;
-    padding: 60px;
+    padding: 10px;
   }
 
   .secondtext {
@@ -1734,7 +1748,6 @@ hr {
     color: rgb(0, 0, 0);
     font-family: 'Pinyon Script', sans-serif;
     font-size: 40px;
-    text-shadow: 0 4px 30px rgba(255, 255, 255, 0.638);
     text-align: center;
     margin: 0px;
     animation: secondtext 5s;
@@ -1774,7 +1787,7 @@ hr {
     position: relative;
     width: 100%;
     margin: 0;
-    padding: 60px;
+    padding: 10px;
 
   }
 
