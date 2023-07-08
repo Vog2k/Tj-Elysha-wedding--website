@@ -637,6 +637,12 @@ section {
   width: 33.33333%;
   padding: 20px;
 }
+.column-33 img{
+  padding: 0px;
+  width: 100%;
+  width: 70%;
+
+}
 
 .large-font {
   font-size: 48px;
