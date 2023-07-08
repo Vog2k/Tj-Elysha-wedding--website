@@ -139,12 +139,13 @@ main {
   padding: 1em 1em;
   text-align: center;
   line-height: 40px;
+  text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.87);
   font-weight: 300;
 }
 .main-banner {
   width: 100%;
   position: relative;
-  z-index: 9;
+  z-index: 10;
   padding: 1em 1em;
   top: 11%;
   left: 0%;
@@ -160,7 +161,7 @@ main {
   font-size: 120px;
   text-align: center;
   line-height: 20px;
-
+  text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.87);
   font-weight: 300;
 }
 
@@ -170,20 +171,20 @@ main {
     color: var(--black);
     font-size:100px;
     line-height: 20px;
-
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
     font-weight: 300;
   }
   .main-banner-title2 {
     color: var(--black);
     font-size: 60px;
     line-height: 50px;
-
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
     font-weight: 100;
   }
   .main-banner {
     width: 100%;
     position: relative;
-    z-index: 9;
+    z-index: 10;
     padding: 1em 1em;
     top: 10%;
     left: 0%;
@@ -196,19 +197,23 @@ main {
 @media screen and (max-width: 927px) {
   .main-banner-title {
     color: var(--black);
-    font-size: 80px;
+    font-size: 20px;
     line-height: 20px;
+
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   }
   .main-banner-title2 {
     color: var(--black);
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 20px;
+
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   }
 
   .main-banner {
     width: 100%;
     position: relative;
-    z-index: 9;
+    z-index: 10;
     padding: 1em 1em;
     top: 10%;
     left: 0%;
@@ -223,17 +228,21 @@ main {
     color: var(--black);
     font-size: 60px;
     line-height: 20px;
+
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   }
   .main-banner-title2 {
     color: var(--black);
     font-size: 20px;
     line-height: 20px;
+
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   }
 
   .main-banner {
     width: 100%;
     position: relative;
-    z-index: 9;
+    z-index: 10;
     padding: 1em 1em;
     top: 10%;
     left: 0%;
@@ -248,19 +257,23 @@ main {
     color: var(--black);
     font-size: 40px;
     line-height: 20px;
+
     text-align: center;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   }
   .main-banner-title2 {
     color: var(--black);
     font-size: 20px;
     line-height: 20px;
+
     text-align: center;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   }
 
   .main-banner {
     width: 100%;
     position: relative;
-    z-index: 9;
+    z-index: 10;
     padding: 1em 1em;
     top: 10%;
     left: 0%;
@@ -270,24 +283,26 @@ main {
 
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 399px) {
   .main-banner-title {
     color: var(--black);
     font-size: 55px;
     line-height: 35px;
     text-align: center;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   }
   .main-banner-title2 {
     color: var(--black);
-    font-size: 35px;
-    line-height: 35px;
+    font-size: 20px;
+    line-height: 15px;
     text-align: center;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   }
 
   .main-banner {
     width: 100%;
     position: relative;
-    z-index: 9;
+    z-index: 10;
     padding: 1em 1em;
     top: 8%;
     left: 0%;
@@ -311,7 +326,7 @@ article {
   top: 70%;
   left: 1.5%;
   transform: translateY(-50%);
-  z-index: 8;
+  z-index: 10;
 }
 
 .hero-info h2 {
@@ -396,16 +411,15 @@ article {
   }
 
   .hi-2 {
-
-    background-image: url("img/MAINHERO.jpg");
-    background-position: 37% !important;
+    background-image: url("img/hero5.jpg");
+    background-position: bottom !important;
 
 
   }
 
   .hi-3 {
-    background-image: url("img/hero-mobile-main.jpg");
-    background-position: top !important;
+    background-image: url("img/MAINHERO.jpg");
+    background-position: 37% !important;
   }
 
 
@@ -565,6 +579,7 @@ section {
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   }
 
   .hero-info h3 {
@@ -666,6 +681,7 @@ section {
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 
   }
 
@@ -768,7 +784,7 @@ section {
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
-
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 
   }
 
@@ -1373,11 +1389,11 @@ section {
   padding: 0px 0px 0px 0px;
   position: relative;
   z-index: 2;
-  font-weight: 0;
   color: rgb(0, 0, 0);
   font-family: 'Pinyon Script', sans-serif;
-  font-size: 60px;
 
+  font-size: 70px;
+  text-shadow: 0 4px 30px rgba(255, 255, 255, 0.638);
   text-align: center;
   margin: 0px;
   animation: secondtext 5s;
@@ -1390,7 +1406,7 @@ section {
   color: rgb(0, 0, 0);
   font-family: 'Courier New', Courier, monospace;
   font-size: 70px;
-
+  text-shadow: 0 4px 30px rgba(255, 255, 255, 0.638);
   text-align: center;
   margin: 0px;
   animation: secondtext 5s;
@@ -1507,7 +1523,7 @@ hr {
     color: rgb(0, 0, 0);
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
-
+    text-shadow: 0 4px 30px rgba(255, 255, 255, 0.638);
     text-align: center;
     margin: 0px;
     animation: secondtext 5s;
@@ -1520,8 +1536,9 @@ hr {
     position: relative;
     z-index: 2;
     color: rgb(0, 0, 0);
-    font-family: 'Pinyon Script', sans-serif;
+    font-family: 'Sunnyletter', sans-serif;
     font-size: 40px;
+    text-shadow: 0 4px 30px rgba(255, 255, 255, 0.638);
     text-align: center;
     margin: 0px;
     animation: secondtext 5s;
@@ -1534,6 +1551,7 @@ hr {
     color: rgb(0, 0, 0);
     font-family: 'Courier New', Courier, monospace;
     font-size: 70px;
+    text-shadow: 0 4px 30px rgba(255, 255, 255, 0.638);
     text-align: center;
     margin: 0px;
     animation: secondtext 5s;
@@ -1559,7 +1577,7 @@ hr {
     position: relative;
     z-index: 2;
     color: rgb(0, 0, 0);
-    font-family: 'Pinyon Script', sans-serif;
+    font-family: 'Sunnyletter', sans-serif;
     font-size: 70px;
     text-align: center;
     margin: 0px;
@@ -1628,8 +1646,9 @@ hr {
     position: relative;
     z-index: 2;
     color: rgb(0, 0, 0);
-    font-family: 'Pinyon Script', sans-serif;
+    font-family: 'Sunnyletter', sans-serif;
     font-size: 40px;
+    text-shadow: 0 4px 30px rgba(255, 255, 255, 0.638);
     text-align: center;
     margin: 0px;
     animation: secondtext 5s;
@@ -1642,6 +1661,7 @@ hr {
     color: rgb(0, 0, 0);
     font-family: 'Courier New', Courier, monospace;
     font-size: 70px;
+    text-shadow: 0 4px 30px rgba(255, 255, 255, 0.638);
     text-align: center;
     margin: 0px;
     animation: secondtext 5s;
@@ -1667,7 +1687,7 @@ hr {
     position: relative;
     z-index: 2;
     color: rgb(0, 0, 0);
-    font-family: 'Pinyon Script', sans-serif;
+    font-family: 'Sunnyletter', sans-serif;
     font-size: 70px;
     text-align: center;
     margin: 0px;
@@ -1738,7 +1758,7 @@ hr {
     position: relative;
     z-index: 2;
     color: rgb(0, 0, 0);
-    font-family: 'Pinyon Script', sans-serif;
+    font-family: 'Sunnyletter', sans-serif;
     font-size: 70px;
     text-align: center;
     margin: 0px;
@@ -1751,8 +1771,9 @@ hr {
     position: relative;
     z-index: 2;
     color: rgb(0, 0, 0);
-    font-family: 'Pinyon Script', sans-serif;
+    font-family: 'Sunnyletter', sans-serif;
     font-size: 40px;
+    text-shadow: 0 4px 30px rgba(255, 255, 255, 0.638);
     text-align: center;
     margin: 0px;
     animation: secondtext 5s;
@@ -1763,8 +1784,9 @@ hr {
     position: relative;
     z-index: 2;
     color: rgb(0, 0, 0);
-    font-family: 'Pinyon Script', sans-serif;
+    font-family: 'Sunnyletter', sans-serif;
     font-size: 55px;
+    text-shadow: 0 4px 30px rgba(255, 255, 255, 0.638);
     text-align: center;
     margin: 0px;
     animation: secondtext 5s;
@@ -1777,6 +1799,7 @@ hr {
     color: rgb(0, 0, 0);
     font-family: 'Courier New', Courier, monospace;
     font-size: 40px;
+    text-shadow: 0 4px 30px rgba(255, 255, 255, 0.638);
     text-align: center;
     margin: 0px;
     animation: secondtext 5s;
@@ -1859,8 +1882,9 @@ hr {
     position: relative;
     z-index: 2;
     color: rgb(0, 0, 0);
-    font-family: 'Pinyon Script', sans-serif;
+    font-family: 'Sunnyletter', sans-serif;
     font-size: 40px;
+    text-shadow: 0 4px 30px rgba(255, 255, 255, 0.638);
     text-align: center;
     margin: 0px;
     animation: secondtext 5s;
@@ -1874,9 +1898,9 @@ hr {
     position: relative;
     z-index: 2;
     color: rgb(0, 0, 0);
-    font-family: 'Pinyon Script', sans-serif;
-
+    font-family: 'Sunnyletter', sans-serif;
     font-size: 55px;
+    text-shadow: 0 4px 30px rgba(255, 255, 255, 0.638);
     text-align: center;
     margin: 0px;
     animation: secondtext 5s;
@@ -1889,6 +1913,7 @@ hr {
     color: rgb(0, 0, 0);
     font-family: 'Courier New', Courier, monospace;
     font-size: 40px;
+    text-shadow: 0 4px 30px rgba(255, 255, 255, 0.638);
     text-align: center;
     margin: 0px;
     animation: secondtext 5s;
@@ -1997,7 +2022,6 @@ hr {
   font-size: 56px;
   word-spacing: 2px;
   font-weight: lighter;
-  text-transform: none;
   font-family: 'Pinyon Script', sans-serif;
 
 }
@@ -2006,7 +2030,6 @@ hr {
   font-size: 36px;
   word-spacing: 2px;
   font-weight: lighter;
-  text-transform: none;
   font-family: 'Pinyon Script', sans-serif;
 
 }
@@ -2059,7 +2082,7 @@ hr {
   /*TABLET VERSION*/
   .thirdtext h1 {
     padding: 0px 80px;
-    font-size: 30px;
+    font-size: 20px;
     word-spacing: 2px;
     font-weight: lighter;
     text-align: center;
@@ -2069,7 +2092,7 @@ hr {
   /*TABLET VERSION*/
   .thirdtext h2 {
     padding: 10px 0px;
-    font-size: 20px;
+    font-size: 15px;
     word-spacing: 2px;
     font-weight: lighter;
     justify-items: center;
