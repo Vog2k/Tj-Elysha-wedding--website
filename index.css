@@ -1862,7 +1862,7 @@ hr {
   }
 }
 
-@media all and (max-width: 399px) {
+@media(min-width: 375px) {
   .secondtext {
     padding: 0px 0px 0px 0px;
     position: relative;
