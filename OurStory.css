@@ -1248,3 +1248,202 @@ html {
     }
   
   }
+  .card1-0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #fff;
+  }
+  .card-0 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 360px;
+    margin: 0 25px;
+    background: #fff;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .card-0:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+  .card-0 .imgBox {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    background: red;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+  .card-0 .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card-0 .img-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .card-0 .imgBox:hover .img-blur {
+    opacity: 1;
+  }
+  .card-0 .img-blur a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  .card-0 .img-blur::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    border: 2px dotted #fff;
+    pointer-events: none;
+    animation: border-anime 15s linear infinite;
+  }
+  @keyframes border-anime {
+    from {
+        transform: rotate(0);
+    } to {
+        transform: rotate(360deg);
+    }
+  }
+  .card-0 .title {
+    margin: 15px 0;
+  }
+  .card-0 .title a {
+    font-size: 1.6rem;
+    color: #555;
+    text-decoration: none;
+    transition: 0.4s;
+  }
+  .card-0 .title a:hover {
+    color: rgb(0, 221, 147);
+  }
+  .card-0 .text {
+    font-size: 0.8rem;
+    line-height: 1.5em;
+    color: #555;
+    opacity: 0.6;
+  }
+  
+  @media all and (max-width: 768px){
+    .card1-0 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #fff;
+    }
+      .card-0 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: 360px;
+        margin: 0 25px;
+        background: #fff;
+        border-radius: 15px;
+        text-align: center;
+        transition: 0.3s;
+      }
+      .card-0:hover {
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      }
+      .card-0 .imgBox {
+        position: relative;
+        width: 180px;
+        height: 180px;
+        background: red;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      }
+      .card-0 .imgBox img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .card-0 .img-blur {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(5px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: 0.5s;
+      }
+      .card-0 .imgBox:hover .img-blur {
+        opacity: 1;
+      }
+      .card-0 .img-blur a {
+        text-decoration: none;
+        color: #fff;
+        letter-spacing: 1px;
+      }
+      .card-0 .img-blur::before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 155px;
+        height: 155px;
+        border-radius: 50%;
+        border: 2px dotted #fff;
+        pointer-events: none;
+        animation: border-anime 15s linear infinite;
+      }
+      @keyframes border-anime {
+        from {
+            transform: rotate(0);
+        } to {
+            transform: rotate(360deg);
+        }
+      }
+      .card-0 .title {
+        margin: 15px 0;
+      }
+      .card-0 .title a {
+        font-size: 1.6rem;
+        color: #555;
+        text-decoration: none;
+        transition: 0.4s;
+      }
+      .card-0 .title a:hover {
+        color: rgb(0, 221, 147);
+      }
+      .card-0 .text {
+        font-size: 0.8rem;
+        line-height: 1.5em;
+        color: #555;
+        opacity: 0.6;
+      }
+    }
