@@ -9,7 +9,7 @@ const dislike = document.querySelector('#dislike');
 // constants
 const urls = [
   'img/FirstDate.jpeg',
-  'img/Rota.jpeg',
+  'img/pic.jpeg',
   'img/FirstXmas.jpeg',
   'img/FirstXmas1.jpeg',
   'img/eight.jpeg',
