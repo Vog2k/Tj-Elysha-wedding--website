@@ -826,13 +826,12 @@ a:hover {
 }
 
 .trademark {
-  width: 30%;
+  width: auto;
   height: 100%;
 }
-
-.trademark img {
-  width: 30%;
-  height: 100%;
+.trademark img{
+  width: 40%;
+  height: 50%;
 }
 
 @media all and (max-width: 968px) {
