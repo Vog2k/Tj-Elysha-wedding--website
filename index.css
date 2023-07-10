@@ -1368,6 +1368,7 @@ section {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
   position: relative;
   width: 100%;
@@ -1550,6 +1551,7 @@ hr {
     position: relative;
     background-position: center;
     width: 100%;
+    background-attachment: fixed;
     margin: 0;
     padding: 0px;
   }
@@ -1652,6 +1654,7 @@ hr {
   .secondcontent {
     background: url(img/Beach.PNG) no-repeat center cover;
     -webkit-background-size: cover;
+    background-attachment: fixed;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-position: center;
@@ -1795,6 +1798,7 @@ hr {
     width: 100%;
     margin: 0;
     padding: 10px;
+    background-attachment: fixed;
 
   }
 
@@ -1901,6 +1905,7 @@ hr {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     position: relative;
     width: 100%;
